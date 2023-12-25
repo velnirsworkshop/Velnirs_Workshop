@@ -1,0 +1,29 @@
+new entry "VW_Aethelion"
+type "Weapon"
+using "WPN_Longsword_2"
+data "RootTemplate" "192f523a-5fd8-4dda-ab3e-597066afc1d8"
+data "ItemGroup" ""
+data "ValueOverride" "5000"
+data "Damage" "1d10"
+data "Damage Type" "Slashing"
+data "Rarity" "Legendary"
+data "Weapon Properties" "Melee;Dippable"
+data "Proficiency Group" "Longswords;MartialWeapons"
+data "Slot" "Melee Main Weapon"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);ItemReturnToOwner()"
+data "Boosts" "UnlockSpell(Zone_MAG_BloodOfLathander_Sunbeam);UnlockSpell(Target_Slash_New);UnlockSpell(Zone_Cleave);UnlockSpell(Zone_Mag_WeaponAction_GiantBlade)"
+data "PassivesOnEquip" ""
+data "StatusOnEquip" "VW_AETHELION_GLOW"
+data "Unique" "1"
+
+new entry "VW_AETHELION_GLOW"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "DisplayName" "h182df858g3926g44e9gb5ffg7793251bb43d;2"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
+data "StackId" "VW_AETHELION_GLOW"
+data "StatusEffect" "6abda680-50c7-40af-8d37-2cc75fae7d21"
+
+
+
+

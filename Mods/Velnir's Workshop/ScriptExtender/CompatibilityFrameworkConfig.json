@@ -1,0 +1,35 @@
+{
+    "FileVersion": 1,
+    "Lists": 
+    [
+        {
+            "modGuid": "82ad0c92-bc12-4194-a973-57ca1ec87d98",
+            "Action": "Insert",
+            "UUIDs": 
+            [
+                
+                "c14c9564-1503-47a1-be19-98e77f22ff59",
+                "2968a3e6-6c8a-4c2e-882a-ad295a2ad8ac",
+                "92126d17-7f1a-41d2-ae6c-a8d254d2b135"
+            ],
+            "Type": "SpellList",
+            "Items": [ "VW_Projectile_ST_Spear" ]
+        },
+        {
+            "modGuid": "82ad0c92-bc12-4194-a973-57ca1ec87d98",
+            "Action": "Insert",
+            "UUIDs": 
+            [
+                "92c4751f-6255-4f67-822c-a75d53830b27",
+                "4823a292-f584-4f7f-8434-6630c72e5411",
+                "65952d48-bb16-4ad7-b173-532182bf7770",
+                "e0099b15-2599-4cba-a54b-b25ae03d6519",
+                "11f331b0-e8b7-473b-9d1f-19e8e4178d7d"
+
+
+            ],
+            "Type": "SpellList",
+            "Items": [ "VW_Projectile_ArcaneBolt" ]
+        }
+    ]
+}

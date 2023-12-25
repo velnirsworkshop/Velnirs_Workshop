@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+    <!-- Item Localization-->
+	<!-- Thunder Cannon -->
+	<content contentuid="hd7846674g6bb2g40a0g9f43gae138da90c41" version="1">Thunder Cannon</content> 
+	<content contentuid="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1">A Unique Relic of a great artificer!</content> 
+	 <!--  Robe of the Timelord-->
+	<content contentuid="h1264ec47g39aag466fg892fg1adc1132a1b4" version="1">This exquisite robe, woven from ethereal strands that shimmer with a celestial glow, bears the unmistakable mark of Velen Lightsbane. 
+	Robe of the Timelord are a manifestation of the god's mastery over time itself. The fabric seems to dance with an otherworldly energy, and constellations subtly shift across its surface.</content>  
+	<content contentuid="h6392bdd6gf697g48b5g86f0gda6fc80dfa41" version="1">Robe of the Timelord</content> 
+	<!--  Quel'Delar-->
+	<content contentuid="hb2d66ec5g8f58g42eeg9b0agff45aae54f4f" version="1">Quel'Delar, a celestial weapon, was meticulously crafted by Tyralion Lightsbane in the ethereal realms. 
+	Infused with raw arcane power and adorned with potent runic markings, this legendary blade stands as a symbol of celestial might on the game's battlefield.</content>
+	<content contentuid="hba3c3e87g3ef5g4c2agb7eag8210533d7c6a" version="1">Quel'Delar</content>
+	<!-- Lightbringer Set -->
+	<content contentuid="h4756b1ceg3bf8g4c2ag8315g4ebd007d8f9c" version="1">Lightbringer's Set Bonus</content>
+	<content contentuid="h4a2b9791g96f5g4606g943bg0b5636155191" version="1">Lightbringer Set Bonus 0/4: There are no bonuses</content>
+	<content contentuid="h623f1e77g0b00g4f61ga1c0g4996a8e3c135" version="1">Lightbringer Set Bonus 2/4: When all Lightbringer Pieces are equipped the wearer gains the following bonuses: &lt;LSTag Type="Status" Tooltip="VW_BLESSING_OF_LIGHT"&gt;Blessing of Light&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="VW_LIGHTWARDEN"&gt;Lightwarden&lt;/LSTag&gt; </content>
+	<content contentuid="h4f0f95a2g1baeg4a85g922bg864df58ccc78" version="1">Lightbringer Set Bonus 4/4: When all Lightbringer Pieces are equipped the wearer gains the following bonuses: &lt;LSTag Type="Status" Tooltip="VW_BLESSING_OF_LIGHT"&gt;Blessing of Light&lt;/LSTag&gt; , the &lt;LSTag Type="Status" Tooltip="VW_LIGHTWARDEN"&gt;Lightwarden&lt;/LSTag&gt; and the &lt;LSTag Type="Spell" Tooltip="VW_Avatar_Of_Light"&gt;Avatar of Light&lt;/LSTag&gt; spell.</content>
+	<content contentuid="h82bcb3a5g0041g4b07gb206g58a7472101ef" version="2">Blessing of Light</content>
+	<content contentuid="h889ef45ag02d3g4d73gac7dg2a425b85cfd0" version="1">The paladin and any nearby allies in [1] ft radius regain the maximum &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; possible when healed.</content>
+	<content contentuid="hb9de9a11g0f97g4ac1ga1e0gcd72d3a710d7" version="2">Blessing of Light</content>
+	<content contentuid="h7b3be30bg93a3g479ega759gd72355ba120e" version="1">The paladin and any nearby allies in [1] ft radius regain the maximum &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; possible when healed.</content>
+	<content contentuid="hcbdcebd9ga86cg4551g9cf5gb0980964683d" version="2">Avatar Of Light</content>
+	<content contentuid="h9edfba80g578ag4da5gbe34g71692520001f" version="2">You Become an Avatar of Light Healing yourself for [1] and your allies within [2] for [1] and then [1] each turn for [3] turns.
+	 In addition you sprout wings allowing you to fly and become resistant to all damage for the duration.</content>
+	<content contentuid="h67c85eb1ge25dg4897gbec8g84fe29247cdb" version="2">Avatar Of Light Healing</content>
+	<content contentuid="h08dc51c9gd499g480agb09dg837cbddc4329" version="2">You Become an Avatar of Light Healing yourself for [1] and your allies within [2] for [1] and then [1] each turn for [3] turns.</content>
+	<content contentuid="hd98e366dgc052g4b3dga4aag3cc3cfa80064" version="1">Avatar of Light Divine Resistance</content>
+	<content contentuid="ha1cad5d8g63a8g4088g8560gc26704be14f3" version="1">You gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all types of damage.</content>
+	<content contentuid="ha5100f2fg2161g421ag846fgeda52df4803a" version="1">Lightwarden</content>
+	<content contentuid="hcca166e9gb82eg475bg80ceg9a643ef86d72" version="1">You gain +[1] &lt;LSTag Type="ActionResource" Tooltip="LayOnHandsCharge"&gt;Lay On Hands&lt;/LSTag&gt; maximum charges.</content>
+	<!-- Lightbringer Breastplate-->
+	<content contentuid="h5a295668g3d3ag4e88gaaf2gb7f1819febe7" version="1">Lightbringer Breastplate</content>
+	<content contentuid="h165305aagab6eg433fg807cg680e8ccb52cc" version="1">Lightbringer's armor pieces gain power if you equip them as a set.  
+	Lightbringer Set Bonus:  
+	&lt;LSTag Type="Status" Tooltip="VW_LIGHTBRINGER_SET_BONUS_0"&gt;Lightbringer Set Bonus 0/4&lt;/LSTag&gt; 
+	&lt;LSTag Type="Status" Tooltip="VW_LIGHTBRINGER_SET_BONUS_2"&gt;Lightbringer Set Bonus 2/4&lt;/LSTag&gt; 
+	&lt;LSTag Type="Status" Tooltip="VW_LIGHTBRINGER_SET_BONUS_4"&gt;Lightbringer Set Bonus 4/4&lt;/LSTag&gt; 
+	</content>
+	<!-- Lightbringer Circlet -->
+	<content contentuid="h9b360819gacc9g426bg8d0dgd835461d625c" version="1">Lightbringer's Diadem</content>
+	<content contentuid="h67e8dba2ge25eg4793gb66bg90d11c60d876" version="1">A unique Diadem created in the Astral forge by Lucilia Mornthal. It allows the wielder to draw power directly from the Celestial plane.</content>
+	<content contentuid="h14be09c9ga1deg4760g8956g474b7e625758" version="1">Divine Halo</content>
+	<content contentuid="h62ebbd14ge557g4a4ag93abg66fb3847d4e4" version="1">The wearer of the Diadem is infused with Pure Celestial Energy.Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;, when your hit points are reduced to 0, you regain [2]. Allies within [1] also regain [3].</content>
+	<content contentuid="h8ac79174g6a67g4672gb4abgc9ffe3e469a7" version="1">%%% Divine Halo Cooldown</content>
+	<content contentuid="h16494605gbb50g45bfgbd73gbf1f46bf6466" version="2">%%% EMPTY</content>
+	<!-- Lightbringer Gauntlets -->
+	<content contentuid="h47409f98gfc8dg40c2gace2gb466c084cb73" version="1">Lightbringer's Gauntlets</content>
+	<content contentuid="hac829d4eg8229g4711gbe48gc6507748a0f7" version="1">A unique pair of Gauntlets created in the Astral forge by Lucilia Mornthal. Their hardness is unrivaled and they can infuse the weapon they are holding with radiant power.</content>
+	<content contentuid="h5883ce98g4716g4fc6g9112g54b6c2e7f399" version="1">Radiant Grip</content>
+	<content contentuid="h08cc2d20g3482g453bg986cg54c4bb7ba530" version="1">The Gauntlets infuse the weapon of the wearer with +[1] damage.</content>
+	<!-- Lightbringer Greaves -->
+	<content contentuid="hb0f9cfdag7ac2g4448ga3b5g07e205c1c83f" version="1">Lightbringer's Greaves</content>
+	<content contentuid="h172000ddg46c8g471egbc5agf7622e94442f" version="1">A unique pair of Greaves created in the Astral forge by Lucilia Mornthal. They allow the wearer to become an immovable fortress to protect their allies.</content>
+	<content contentuid="h7ab1ff0eg0b6fg4a3dg8bbcg60856044c517" version="1">Immovable Force</content>
+	<content contentuid="h98155262gdc07g4463g8818g1711a7b950e8" version="1">The wearer becomes an immovable mountain becoming &lt;LSTag Tooltip="Immune"&gt;Immune&lt;/LSTag&gt; to &lt;LSTag Type="Status" Tooltip="SG_Prone"&gt;Thrown Prone&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_Restrained"&gt;Restrained&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_Stunned"&gt;Stunned&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_CanBePickedUp"&gt;Shove&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_Taunted"&gt;Taunt&lt;/LSTag&gt; or similar effects.</content>
+	<!-- End of Lightbringer Set -->
+	
+	<!--  Aleria's Bracers of Arcane Power-->
+	<content contentuid="hfbde6664g300bg481ag9206gbf58d292b3ca" version="1">Bracers of Aleria Windrunner , mother of Velen and Lorenala , High Sorceress. These Bracers are the epitome of Metamagic Powers</content>
+	<content contentuid="h95fa5136g51f9g458dgac16g0502793754a6" version="1">Aleria's Bracers of Arcane Power</content>
+	<!--  Aleria's Blessing-->
+	<content contentuid="h285f579cg5da7g4365gabb4gd15ad7a1576e" version="1">Empowered by Aleria's Blessing giving you deeper access to your inner power and grants you the power to tap into the weave to gain +[1] &lt;LSTag Tooltip="Sorcery Points"&gt;Max Sorcery Points&lt;/LSTag&gt;.</content>
+	<content contentuid="hcaf95ecbg917bg42fegbfcbg2ecbeab40409" version="1">Aleria's Blessing</content>
+	<!-- Aleria's Armor-->
+	<content contentuid="hbf379b4eg750cg4a49gb834g70dc2fa100f9" version="2">You gain a +[1] bonus to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; as long as you are not wearing armour or holding a shield.</content>
+	<content contentuid="hcfd66fbege278g41b3g9b05g832eb195f1c9" version="2">Aleria's Weave Protection</content>
+	<!-- End of Aleria's Bracers of Arcane Power-->
+
+	<!-- Mpekatsoksulo-->
+    <content contentuid="h68a55188g2cdag4ca0g8a6eg1a5fdb933827" version="1"> To Mpekatsoksulo einai to TOP MPEKATSOKSULO GIA MPEKATSOKSULIASMA</content>
+	<content contentuid="h147025c8ged20g47e2g8669g0b4d46d0c6a6" version="1"> To Mpekatsoksulo</content>
+	<!-- Mpekatsoksuliasma-->
+	<content contentuid="hd03bd94eg2df3g4c33g9225g3bd1b1caeee1" version="1">Vara me pathos, Vara me misos, Vara me to MPEKATSOKSULO</content>
+	<content contentuid="h0992ab2cg95cbg44f7gb113g4eb5f59cfde2" version="2">Ultimate Mpekatsoksuliasma</content>
+	<!-- Mpekatsokuliasma stou KEFAL-->
+	<content contentuid="hcc890b33ge247g4f1dg8f85g92b7aa171e8e" version="2">OTAN OLA PAN STRAVA, VARA STOU KEFAL</content>
+	<content contentuid="h4c7b266bgea6fg482fgbc2bgf0793b1539f0" version="4">Mpekatsoksuliasma stou KEFAL</content>
+	<!-- End of Mpekatsoksulo-->
+	
+	<!-- Arcane Bolts Spell-->
+	<content contentuid="hca93cf88gb9bbg49bbg89afg0f0e7c7d80af" version="1"> Arcane Bolts</content>
+	<content contentuid="hf1f7a3ceg6cf0g4100ga9cbgddf48c6bcc58" version="1"> Throw [2] Arcane Bolts that deal [1] damage each ignoring reistance.</content>
+
+	<!-- Aethelion-->
+	<content contentuid="h0f2fa445gc1eeg4c31gba81g67dfdac1a1cb" version="1"> Æthelion, The Holy Dawn, a weapon forge in the Astral forge by Aurelios Nelmar from Ætherite ore infused with raw celestial energy from the Celestial Plane.</content>
+	<content contentuid="h7d7e194egb415g445dg8acdgfb0511b32916" version="3"> Æthelion, The Holy Dawn</content>
+	<!-- Aethelion Growth-->
+	<content contentuid="hc85f8328ga00eg4373g9579g540f326aa1a7" version="1">Attunement</content>
+    <content contentuid="hde91030eg2093g4a46g81ddg48c5b1eea672" version="1">Æthelion gets more powerful with its wielder: at higher levels adds bonus damage, unlocks more powerful skills and the ability to shed light.</content>
+	<!-- The Holy Dawn-->
+	<content contentuid="h182df858g3926g44e9gb5ffg7793251bb43d" version="1">The Holy Dawn</content>
+	<!--Sunlight Thunder Spear-->
+	<content contentuid="3116359e-7dc1-40f3-95ea-f6f0af170a01" version="1">Sunlight Lightning Spear</content>
+	<content contentuid="0b1e2522-e4b3-444d-82d4-13376dcc25b8" version="2">Throws a conjured magical spear of Sunlight and Lightning dealing [1] damage and [2] damage and Stunning the target.</content>
+	
+	<content contentuid="h8e9f53d3gbce9g47a8ga062g4fbd160df209" version="1">VW_Avatar_Of_Light_Cooldown</content>
+
+</contentList>
+

@@ -1,0 +1,8 @@
+{
+    "RequiredVersion": 12,
+    "ModTable": "V_Workshop",
+    "FeatureFlags": [
+        "Osiris",
+        "Lua"
+    ]
+}
