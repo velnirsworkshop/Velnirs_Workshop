@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
     <!-- Item Localization-->
-	<!-- Thunder Cannon -->
-	<content contentuid="hd7846674g6bb2g40a0g9f43gae138da90c41" version="1">Thunder Cannon</content> 
-	<content contentuid="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1">A Unique Relic of a great artificer!</content> 
+	<!-- Death Stalker Set -->
+	<content contentuid="hc2a1e65dgdb9eg49e1gb6a0g238ed9b884b2" version="1">DeathStalker's Set Bonus</content>
+	<content contentuid="hc572fca4g9142g40f7g8db7g1837e8570a59" version="1">DeathStalker's Set Bonus 0/4: There are no bonuses</content>
+	<content contentuid="hed1cca86g802cg4fddg9c66g9934dc2475ee" version="1">DeathStalker's Set Bonus 2/4: There are no bonuses</content>
+	<content contentuid="h56af5688g5bdfg4097ga00egdc669b7e5774" version="1">DeathStalker's Set Bonus 4/4: There are no bonuses</content>
+	<content contentuid="ha5af7af5g0e9ag487dg840fgfeb86698aa77" version="1">Superior Assassination</content>
+	<content contentuid="h7c6f5934g7375g4eb5g8fedgf3e473026f3f" version="1">Whenever you score a &lt;LSTag Tooltip="CriticalHit"&gt;critical hit&lt;/LSTag&gt;, deal an additional [1].</content>
+	<content contentuid="h224438begf382g4c6dgaf87gad9d278430dd" version="1">Shadow Assault</content>
+	<content contentuid="hb82c3adfg2034g40cdg853fga2a645281649" version="1">Walk through the shadows appearing behind an enemy within [1] feet attempting to assassinate him. If the attack is successful it is considered a critical.</content>
+	<content contentuid="ha75291d2ge319g4f2agbd9eg964687b848d2" version="1">Death Strike</content>
+	<content contentuid="h83fbc94agce1dg47b5g8d29g8d2cbfcdb420" version="1">You strike your target through the shadows with such masterful precision that can die instantly if his &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are less than 100.</content>
+	<!-- Deathstalker Cuirass-->
+	<content contentuid="hd7846674g6bb2g40a0g9f43gae138da90c41" version="1">DeathStalker's Cuirass</content> 
+	<content contentuid="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1">A shadow-infused chestplate that melds seamlessly with the rogue's movements, providing both protection and stealth. The cuirass is adorned with dark symbols that seem to pulse with a mysterious energy.</content> 
+	<content contentuid="hcefe7e5dg8e08g4bd8gb404g0ce8e51f85a7" version="1">Master Assasin</content>
+	<content contentuid="h5218c9e1gb039g4387g8372gacc21196b8bb" version="1"></content>
+	<!-- Deathstalker Deathmask-->
+	<content contentuid="heef3985egab9ag4fcdgabc3ga57894af8f85" version="1">DeathStalker's Deathmask</content> 
+	<content contentuid="h86abc6e0g7329g4c3bg928ag7886dace657a" version="1">A finely crafted mask adorned with shadowy motifs and made from the hide of elusive creatures of the night. When worn, it seems to drink in the surrounding shadows.</content> 
+	<content contentuid="h936bf380gb9ccg4a47ga995gbb143242ebd9" version="1">Shadow Killer</content> 
+	<content contentuid="hd04aedf1g1f1bg45f9ga63dgcc8c5be178fc" version="1">You can see normally in darkness, both magical and non-magical, to a distance of [1]. In addition,
+	while hiding the number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 2. This effect can stack</content> 
+	<content contentuid="he7a00002g0b5bg44bbg8fbdg0564dee8ad7f" version="1">While hidden, the number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 2. This effect can stack.</content> 
+	
+	<!-- Deathstalker Handguards-->
+	<content contentuid="hb3a12f8ag9340g426dgbed2g73272362d7a0" version="1">DeathStalker's Handguards</content> 
+	<content contentuid="hb10c4c47g475fg4ecfg9c58g281a363a3f99" version="1">Sleek, black leather gloves adorned with intricate shadowy patterns. These handguards are tailored to enhance a rogue's agility and lethality.</content>
+	<content contentuid="h7b76ecfbg52dbg4871gb2d0g6f7e38a4b165" version="1">Poison Mastery</content>
+	<content contentuid="hdad2d934ge921g4530g8d48g2a7b9ac0efdd" version="1">You gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SleightOfHand"&gt;Sleight of Hand&lt;/LSTag&gt; and deal +[2] damage.
+	 In addition the target needs to succeed a Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; or become &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt;.</content>
+	<!-- Deathstalker Boots-->
+	<content contentuid="h646d6726g9495g4289ga007g69f471c455f4" version="1">DeathStalker's Boots</content> 
+	<content contentuid="h31c71cd6gcdfeg4ec6g9496g97f1414fd4c4" version="1">Boots forged from the shadows, these sleek and supple footwear blend seamlessly with the rogue's attire, emphasizing both style and functionality.</content>
+	<content contentuid="h1fefde6ag9ce9g425bgb9e9g32a2acb0d534" version="1">Shadow Walker</content>
+	<content contentuid="hbdb661e9gfe0cg47f0gae2eg9ea6bc38e4aa" version="1">You gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Stealth"&gt;Stealth&lt;/LSTag&gt; and increased &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by [2]. </content>
 	 <!--  Robe of the Timelord-->
 	<content contentuid="h1264ec47g39aag466fg892fg1adc1132a1b4" version="1">This exquisite robe, woven from ethereal strands that shimmer with a celestial glow, bears the unmistakable mark of Velen Lightsbane. 
 	Robe of the Timelord are a manifestation of the god's mastery over time itself. The fabric seems to dance with an otherworldly energy, and constellations subtly shift across its surface.</content>  
@@ -96,6 +128,7 @@
 	<content contentuid="0b1e2522-e4b3-444d-82d4-13376dcc25b8" version="2">Throws a conjured magical spear of Sunlight and Lightning dealing [1] damage and [2] damage and Stunning the target.</content>
 	
 	<content contentuid="h8e9f53d3gbce9g47a8ga062g4fbd160df209" version="1">VW_Avatar_Of_Light_Cooldown</content>
+	
 
 </contentList>
 

@@ -61,7 +61,7 @@ VAdd["LBSet_Bonus"] = LBSet_Bonus
 
 local VW_Diadem_Check = function(LB_character)
     local char = LB_character
-    local diadem_UUID = "8bcd1286-0dc5-4fe5-a21c-f08fbc49112c"
+    
 end
 VAdd["VW_Diadem_Check"] = VW_Diadem_Check
 
