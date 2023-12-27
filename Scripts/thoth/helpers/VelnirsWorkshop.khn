@@ -1,0 +1,11 @@
+function IsPaladin(entity)
+    local entity = entity or context.Source
+    local result = Tagged('PALADIN', entity)
+    return ConditionResult(result.Result, {ConditionError("IsNotPaladin")})
+end
+
+function IsRogue(entity)
+    local entity = entity or context.Source
+    local result = Tagged('ROGUE', entity)
+    return ConditionResult(result.Result, {ConditionError("IsNotRogue")})
+end

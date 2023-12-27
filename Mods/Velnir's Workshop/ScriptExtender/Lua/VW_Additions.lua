@@ -1,70 +1,115 @@
-
 local VAdd = {}
 
-LB_Set =
-{
-    { Slot = "Helmet", Name = "Lightbringer Diadem",      ID = "fdb9bb85-9518-4df8-9259-c39c79f416bd", EQ = false },
-    { Slot = "Breast", Name = "Lightbringer Breastplate", ID = "da41b2e0-e1c9-41c8-94dd-92c275396600", EQ = false },
-    { Slot = "Gloves", Name = "Lightbringer Gauntlets",   ID = "3046c467-d67d-4c68-b213-e28788d1b17b", EQ = false },
-    { Slot = "Boots",  Name = "Lightbringer Greaves",     ID = "a7bd178c-fd15-41d1-aeb5-e3327c7b4dbd", EQ = false }
+-- Define the armor sets and their bonuses in a configuration table
+local VW_ArmorSets = {
+    {
+        Name = "Lightbringer",
+        Slots = {
+            { Slot = "Helmet", ID = "fdb9bb85-9518-4df8-9259-c39c79f416bd", EQ = false }, -- Lightbringer Diadem
+            { Slot = "Breast", ID = "da41b2e0-e1c9-41c8-94dd-92c275396600", EQ = false }, -- Lightbringer Breastplate
+            { Slot = "Gloves", ID = "3046c467-d67d-4c68-b213-e28788d1b17b", EQ = false }, -- Lightbringer Gauntlets
+            { Slot = "Boots",  ID = "a7bd178c-fd15-41d1-aeb5-e3327c7b4dbd", EQ = false }, -- Lightbringer Greaves
+        },
+        SetBonuses = {
+            "VW_LIGHTBRINGER_SET_BONUS_0",
+            "VW_LIGHTBRINGER_SET_BONUS_2",
+            "VW_LIGHTBRINGER_SET_BONUS_4",
+        }
+    },
+    {
+        Name = "Deathstalker",
+        Slots = {
+            { Slot = "Helmet", ID = "33c60c32-0ab0-473f-8c4a-c578887d75d7", EQ = false }, -- Deathstalker Deathmask
+            { Slot = "Breast", ID = "c56bd0de-c271-4e48-a8f9-f34aa8a5c00f", EQ = false }, -- Deathstalker Cuirass
+            { Slot = "Gloves", ID = "e31da82f-bd2f-4272-b0cb-685bf020358d", EQ = false }, -- Deathstalker Handguards
+            { Slot = "Boots",  ID = "a1c73177-9026-4a0a-a09a-c5a4e83eb1f5", EQ = false }, -- Deathstalker Boots
+        },
+        SetBonuses = {
+            "VW_DEATHSTALKER_SET_BONUS_0",
+            "VW_DEATHSTALKER_SET_BONUS_2",
+            "VW_DEATHSTALKER_SET_BONUS_4",
+        }
+    },
+
 }
 
-LB_Status =
-{
-    { LB_SetBonus = "VW_LIGHTBRINGER_SET_BONUS_0", IsActive = false },
-    { LB_SetBonus = "VW_LIGHTBRINGER_SET_BONUS_2", IsActive = false },
-    { LB_SetBonus = "VW_LIGHTBRINGER_SET_BONUS_4", IsActive = false },
-}
 
+local function VW_SetCheck(VW_character)
+    for _, armorSet in ipairs(VW_ArmorSets) do
+        local allSlotsEmpty = true
+        for _, slot in ipairs(armorSet.Slots) do
+            local equippedItem = Osi.GetEquippedItem(VW_character, slot.Slot)
+            if equippedItem ~= nil then
+                local itemID = Osi.GetTemplate(equippedItem):sub(-36)
+                slot.EQ = (itemID == slot.ID)
+                allSlotsEmpty = false
+            else
+                slot.EQ = nil
+            end
+        end
 
-
-local LBSet_Check = function(LB_character)
-    for _, temp in pairs(LB_Set) do
-        if Osi.GetEquippedItem(LB_character, temp.Slot) ~= nil then
-            local LB_eq = tostring(Osi.GetEquippedItem(LB_character, temp.Slot))
-            local LB_tmp = Osi.GetTemplate(LB_eq):sub(-36)
-            temp.EQ = (LB_tmp == temp.ID)
-        else
-            temp.EQ = nil
+        if allSlotsEmpty then
+            for _, status in ipairs(armorSet.SetBonuses) do
+                Osi.RemoveStatus(VW_character, status)
+            end
         end
     end
 end
-VAdd["LBSet_Check"] = LBSet_Check
+VAdd["VW_SetCheck"] = VW_SetCheck
 
 
-local LBSet_Bonus = function(LB_character)
-    local SetCounter = 0
-
-    for _, tempBonus in pairs(LB_Set) do
-        if tempBonus.EQ == true then
-            SetCounter = SetCounter + 1
-        end
-    end
-
-    SetCounter = math.max(0, math.min(SetCounter, 4))
-
-    Osi.RemoveStatus(LB_character, LB_Status[1].LB_SetBonus)
-    Osi.RemoveStatus(LB_character, LB_Status[2].LB_SetBonus)
-    Osi.RemoveStatus(LB_character, LB_Status[3].LB_SetBonus)
-
-    if SetCounter == 0 then
-        Osi.RemoveStatus(LB_character, LB_Status[1].LB_SetBonus)
-    elseif SetCounter < 2 then
-        Osi.ApplyStatus(LB_character, LB_Status[1].LB_SetBonus, -1, -1)
-    elseif SetCounter < 4 then
-        Osi.ApplyStatus(LB_character, LB_Status[2].LB_SetBonus, -1, -1)
-    else
-        Osi.ApplyStatus(LB_character, LB_Status[3].LB_SetBonus, -1, -1)
-    end
-end
-VAdd["LBSet_Bonus"] = LBSet_Bonus
-
-local VW_Diadem_Check = function(LB_character)
-    local char = LB_character
+local function VW_SetBonus(VW_character)
+    local activeSet = nil
+    local setCounter = 0
     
+    for _, armorSet in ipairs(VW_ArmorSets) do
+        local currentSetCounter = 0
+
+        for _, slot in ipairs(armorSet.Slots) do
+            if slot.EQ == true then
+                currentSetCounter = currentSetCounter + 1
+            end
+        end
+
+        if currentSetCounter >= setCounter then
+            activeSet = armorSet
+            setCounter = currentSetCounter
+        end
+    end
+
+    for _, status in ipairs(activeSet.SetBonuses) do
+        Osi.RemoveStatus(VW_character, status)
+    end
+
+    if setCounter == 1 then
+        local statusToApply = activeSet.SetBonuses[setCounter]
+        if statusToApply then
+            Osi.ApplyStatus(VW_character, statusToApply, -1, -1)
+        end
+    elseif setCounter == 2 or setCounter == 3 then
+        local statusToApply = activeSet.SetBonuses[2]
+        if statusToApply then
+            Osi.ApplyStatus(VW_character, statusToApply, -1, -1)
+        end
+    elseif setCounter == 4 then
+        local statusToApply = activeSet.SetBonuses[3]
+        if statusToApply then
+            Osi.ApplyStatus(VW_character, statusToApply, -1, -1)
+        end
+    end
 end
-VAdd["VW_Diadem_Check"] = VW_Diadem_Check
-
-
+VAdd["VW_SetBonus"] = VW_SetBonus
 
 return VAdd
+
+
+
+
+
+
+
+
+
+
+
+

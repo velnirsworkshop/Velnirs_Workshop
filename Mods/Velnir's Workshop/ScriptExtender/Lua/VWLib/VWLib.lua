@@ -30,8 +30,8 @@ local GetTeamMembers = function(event)
         local uuid = v[1]
         print("Team Member: " .. uuid)
         VW_TeamMembers[uuid] = true
-        VAdd.LBSet_Check(uuid)
-        VAdd.LBSet_Bonus(uuid)
+        VAdd.VW_SetCheck(uuid)
+        VAdd.VW_SetBonus(uuid)
     end
     return VW_TeamMembers
 end

@@ -13,7 +13,7 @@ Ext.Events.DoConsoleCommand:Subscribe(function(e)
         for _, file in pairs {
             "VW_A_Alerias.txt",
             "VW_Arcane_Bolt.txt",
-            "VW_AS_Avatar_of_Light.txt",
+            "VW_AS_Deathstalker.txt",
             "VW_AS_Lightbringer.txt",
             "VW_Sunlight_Spear.txt",
             "VW_Timelord_Robe.txt",
@@ -27,17 +27,17 @@ Ext.Events.DoConsoleCommand:Subscribe(function(e)
 end)
 
 
-Ext.Osiris.RegisterListener("TemplateEquipped", 2, "after", function(_, LB_character)
-    VAdd.LBSet_Check(LB_character)
+Ext.Osiris.RegisterListener("TemplateEquipped", 2, "after", function(_, VW_character)
+    VAdd.VW_SetCheck(VW_character)
     print("Registered Equip")
-    VAdd.LBSet_Bonus(LB_character)
+    VAdd.VW_SetBonus(VW_character)
     print("Register Set")
 end)
 
-Ext.Osiris.RegisterListener("TemplateUnequipped", 2, "after", function(_, LB_character)
-    VAdd.LBSet_Check(LB_character)
+Ext.Osiris.RegisterListener("TemplateUnequipped", 2, "after", function(_, VW_character)
+    VAdd.VW_SetCheck(VW_character)
     print("Registered UnEquip")
-    VAdd.LBSet_Bonus(LB_character)
+    VAdd.VW_SetBonus(VW_character)
     print("Register Set")
 end)
 
