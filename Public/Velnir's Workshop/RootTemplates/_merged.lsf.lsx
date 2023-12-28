@@ -5,6 +5,22 @@
 		<node id="Templates">
 			<children>
 
+				<!-- Queldelar -->
+				<node id="GameObjects"> Anduril New V3
+					<attribute id="Description" type="TranslatedString" handle="hb2d66ec5g8f58g42eeg9b0agff45aae54f4f" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hba3c3e87g3ef5g4c2agb7eag8210533d7c6a" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="Icon" type="FixedString" value="VW_WP_Queldelar" />
+					<attribute id="MapKey" type="FixedString" value="856f2c84-87e5-4133-8fdd-06654c0d0818" />
+					<attribute id="Name" type="LSString" value="VW_Queldelar" />
+					<attribute id="ParentTemplateId" type="FixedString" value="ecfb9f69-5bc3-402e-acd8-c91d57e28403" />
+					<attribute id="VisualTemplate" type="FixedString" value="02818974-193a-4b66-a66b-144dddadfe0e" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="406a5b2c-1f47-1927-5e2b-1993ec95fce5" />
+					<attribute id="Stats" type="FixedString" value="VW_Queldelar" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115196665791066" />
+				</node>	
+
 				<!-- DeathStalkers Cuirass-->
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1" />

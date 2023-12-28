@@ -99,7 +99,8 @@ data "Description" "h98155262gdc07g4463g8818g1711a7b950e8;1"
 data "DescriptionParams" ""
 data "Properties" "Highlighted"
 data "BoostContext" "OnEquip;OnCreate"
-data "Boosts" "StatusImmunity(SG_Prone);StatusImmunity(SG_Restrained);StatusImmunity(SG_Stunned);StatusImmunity(SG_CanBePickedUp);StatusImmunity(SG_Approaching);StatusImmunity(SG_Taunted);StatusImmunity(SG_Fleeing);"
+data "Boosts" "Attribute(Grounded);StatusImmunity(DIFFICULT_TERRAIN);StatusImmunity(DIFFICULT_TERRAIN_WEB);StatusImmunity(DIFFICULT_TERRAIN_MUD);StatusImmunity(DIFFICULT_TERRAIN_VINES);StatusImmunity(DIFFICULT_TERRAIN_OVERGROWTH);StatusImmunity(DIFFICULT_TERRAIN_LAVA);StatusImmunity(SG_Prone);StatusImmunity(SG_Paralyzed);StatusImmunity(SG_Restrained);StatusImmunity(CRIPPLED);StatusImmunity(HAMSTRING);StatusImmunity(PIN_DOWN)"
+
 
 new entry "VW_DIVINE_HALO_RESURRECT_TECHNICAL"
 type "StatusData"
@@ -164,7 +165,7 @@ data "Icon" "Item_MAG_Infernal_Plate_Armor"
 data "StackId" "VW_LIGHTBRINGER_SET_BONUS"
 data "StatusPropertyFlags" "DisableOverhead;IgnoreResting"
 data "StatusGroups" "SG_RemoveOnRespec"
-data "Boosts" "UnlockSpell(VW_Avatar_of_Light,,,UntilRest)"
+data "Boosts" "UnlockSpell(VW_Avatar_of_Light,,,UntilRest);UnlockSpell(Trips_Protector_Wings_Summon)"
 data "OnApplyFunctors" "ApplyStatus(VW_BLESSING_OF_LIGHT,-1,-1);ApplyStatus(VW_LIGHTWARDEN,-1,-1)"
 data "OnRemoveFunctors" "RemoveStatus(VW_BLESSING_OF_LIGHT);RemoveStatus(VW_LIGHTWARDEN)"
 

@@ -99,7 +99,8 @@
 	<content contentuid="h172000ddg46c8g471egbc5agf7622e94442f" version="1">A unique pair of Greaves created in the Astral forge by Lucilia Mornthal. They allow the wearer to become an immovable fortress to protect their allies.
 	Only Equippable by a &lt;b&gt;&lt;i&gt;Paladin.&lt;/i&gt;&lt;/b&gt;</content>
 	<content contentuid="h7ab1ff0eg0b6fg4a3dg8bbcg60856044c517" version="1">Immovable Force</content>
-	<content contentuid="h98155262gdc07g4463g8818g1711a7b950e8" version="1">The wearer becomes an immovable mountain becoming &lt;LSTag Tooltip="Immune"&gt;Immune&lt;/LSTag&gt; to &lt;LSTag Type="Status" Tooltip="SG_Prone"&gt;Thrown Prone&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_Restrained"&gt;Restrained&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_Stunned"&gt;Stunned&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_CanBePickedUp"&gt;Shove&lt;/LSTag&gt; , &lt;LSTag Type="Status" Tooltip="SG_Taunted"&gt;Taunt&lt;/LSTag&gt; or similar effects.</content>
+	<content contentuid="h98155262gdc07g4463g8818g1711a7b950e8" version="1">The wearer becomes an immovable mountain and cannot be forcibly moved by a foe's spells or actions, and you ignore the effects of &lt;LSTag Type="Status" Tooltip="DIFFICULT_TERRAIN"&gt;Difficult Terrain&lt;/LSTag&gt;.
+	In addition, you cannot be &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt;. </content>
 	<!-- End of Lightbringer Set -->
 	
 	<!--  Aleria's Bracers of Arcane Power-->
