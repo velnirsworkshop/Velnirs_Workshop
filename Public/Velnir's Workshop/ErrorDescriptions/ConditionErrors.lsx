@@ -16,6 +16,12 @@
                     <attribute id="Identifier" type="FixedString" value="IsNotRogue"/>
                     <attribute id="UUID" type="guid" value="a6e53f40-657d-4aa2-a9d5-729a339cb037"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h7cfa05aagf4f3g4969g8f4cg641ba9886191" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="IsNotDruid"/>
+                    <attribute id="UUID" type="guid" value="f04ab35b-70a8-4706-8023-dea5c8c13bfa"/>
+                </node>
             </children>
         </node>
     </region>

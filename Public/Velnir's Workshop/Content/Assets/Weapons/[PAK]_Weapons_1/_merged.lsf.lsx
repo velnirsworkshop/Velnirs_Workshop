@@ -20,10 +20,10 @@
 			<children>
 				<node id="Resource"> <!-- Queldelar -->
 					<attribute id="DiffusionProfileUUID" type="FixedString" value="" />
-					<attribute id="ID" type="FixedString" value="457057c5-44c3-4f07-9cca-a3413574367c" />
+					<attribute id="ID" type="FixedString" value="857f937c-5461-4cdd-86bd-f306539eedbd" />
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="MaterialType" type="uint8" value="4" />
-					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar" />
+					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar_Mesh" />
 					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Materials/Base/Base_GradientMapping_2G.lsf" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274213" />
 					<children>
@@ -289,7 +289,7 @@
 		<node id="TextureBank">
 			<children>
 
-			<!-- Anduril -->
+			<!-- Queldelar -->
 
 
 
@@ -304,7 +304,7 @@
 					<attribute id="Streaming" type="bool" value="True" />
 					<attribute id="Template" type="FixedString" value="VW_HUM_Queldelar_NM" />
 					<attribute id="Type" type="int32" value="1" />
-					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Width" type="int32" value="1024" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
 				</node>
 				<node id="Resource">
@@ -318,7 +318,7 @@
 					<attribute id="Streaming" type="bool" value="True" />
 					<attribute id="Template" type="FixedString" value="VW_HUM_Queldelar_BM" />
 					<attribute id="Type" type="int32" value="1" />
-					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Width" type="int32" value="1024" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
 				</node>
 				<node id="Resource">
@@ -332,7 +332,7 @@
 					<attribute id="Streaming" type="bool" value="True" />
 					<attribute id="Template" type="FixedString" value="VW_HUM_Queldelar_PM" />
 					<attribute id="Type" type="int32" value="1" />
-					<attribute id="Width" type="int32" value="2048" />
+					<attribute id="Width" type="int32" value="1024" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
 				</node>
 
@@ -353,11 +353,11 @@
 					<attribute id="BoundsMin" type="fvec3" value="-0.1314379 -0.0107545 -1.158125" />
 					<attribute id="Center" type="fvec3" value="0 0.001228543 -0.4141087" />
 					<attribute id="HairType" type="uint8" value="0" />
-					<attribute id="ID" type="FixedString" value="877763ee-7b6f-4bc5-a55f-45ce870c3777" />
+					<attribute id="ID" type="FixedString" value="8201ff66-622e-4e67-b06a-b22bea1565a8" />
 					<attribute id="Initialized" type="bool" value="True" />
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="MaterialType" type="uint8" value="4" />
-					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar" />
+					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar_Mesh" />
 					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
 					<attribute id="Radius" type="float" value="1.01437" />
 					<attribute id="SkeletonResource" type="FixedString" value="" />
@@ -372,14 +372,14 @@
 						<node id="Base" />
 						<node id="Objects">
 							<attribute id="LOD" type="uint8" value="0" />
-							<attribute id="MaterialID" type="FixedString" value="457057c5-44c3-4f07-9cca-a3413574367c" />
+							<attribute id="MaterialID" type="FixedString" value="857f937c-5461-4cdd-86bd-f306539eedbd" />
 							<attribute id="ObjectID" type="FixedString" value="VW_HUM_Queldelar_Mesh.VW_HUM_Queldelar_Mesh.0" />
 							<attribute id="Physics" type="FixedString" value="" />
 							<attribute id="Slot" type="FixedString" value="" />
 						</node>
 						<node id="Objects">
 							<attribute id="LOD" type="uint8" value="1" />
-							<attribute id="MaterialID" type="FixedString" value="457057c5-44c3-4f07-9cca-a3413574367c" />
+							<attribute id="MaterialID" type="FixedString" value="857f937c-5461-4cdd-86bd-f306539eedbd" />
 							<attribute id="ObjectID" type="FixedString" value="VW_HUM_Queldelar_Mesh.VW_HUM_Queldelar_Mesh.0" />
 							<attribute id="Physics" type="FixedString" value="" />
 							<attribute id="Slot" type="FixedString" value="" />
@@ -399,7 +399,7 @@
 					<attribute id="Initialized" type="bool" value="True" />
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="MaterialType" type="uint8" value="4" />
-					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar" />
+					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar_Mesh" />
 					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
 					<attribute id="Radius" type="float" value="1.01437" />
 					<attribute id="SkeletonResource" type="FixedString" value="" />
@@ -414,14 +414,14 @@
 						<node id="Base" />
 						<node id="Objects">
 							<attribute id="LOD" type="uint8" value="0" />
-							<attribute id="MaterialID" type="FixedString" value="457057c5-44c3-4f07-9cca-a3413574367c" />
+							<attribute id="MaterialID" type="FixedString" value="857f937c-5461-4cdd-86bd-f306539eedbd" />
 							<attribute id="ObjectID" type="FixedString" value="VW_HUM_Queldelar_Mesh.VW_HUM_Queldelar_Mesh.0" />
 							<attribute id="Physics" type="FixedString" value="" />
 							<attribute id="Slot" type="FixedString" value="" />
 						</node>
 						<node id="Objects">
 							<attribute id="LOD" type="uint8" value="1" />
-							<attribute id="MaterialID" type="FixedString" value="457057c5-44c3-4f07-9cca-a3413574367c" />
+							<attribute id="MaterialID" type="FixedString" value="857f937c-5461-4cdd-86bd-f306539eedbd" />
 							<attribute id="ObjectID" type="FixedString" value="VW_HUM_Queldelar_Mesh.VW_HUM_Queldelar_Mesh.0" />
 							<attribute id="Physics" type="FixedString" value="" />
 							<attribute id="Slot" type="FixedString" value="" />

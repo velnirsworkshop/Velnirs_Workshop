@@ -5,8 +5,75 @@
 		<node id="Templates">
 			<children>
 
+				<!-- Grovekeeper's Jacket-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h35a2a68fgfe1ag4774g8f71gea6b9b84e32e" version="7" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h5383d722ge977g459eg901dg571a3f0c8582" version="2" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="Icon" type="FixedString" value= "Item_ARM_Hide_2" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="709fde2d-efb4-44d2-b501-945334f2b1d1" />
+					<attribute id="Name" type="LSString" value="VW_Grovekeeper_Jacket" />
+					<attribute id="ParentTemplateId" type="FixedString" value="94ed8ec8-93a4-4a8c-bc47-55cb3faae7c0" />
+					<attribute id="VisualTemplate" type="FixedString" value="880badab-7377-2291-3b5a-cedf0a7ed15b" />
+					<attribute id="Stats" type="FixedString" value="VW_Grovekeeper_Jacket" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+				</node>
+				<!-- End of Grovekeeper's Jacket-->
+
+				<!-- Grovekeeper's Circlet-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="ha1d47dabg21c9g4808gaddbgdba6ed47955a" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hc65b9ef9g6764g43e2ga061g7e7f57eb7da2" version="2" />
+					<attribute id="Icon" type="FixedString" value="Generated_MAG_Gish_ArcaneSynergy_Circlet_Magic" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="b9a2963c-2cfe-47c8-b9a8-fab617a1a7a7" />
+					<attribute id="Name" type="LSString" value="VW_Grovekeeper_Circlet" />
+					<attribute id="ParentTemplateId" type="FixedString" value="348b0f52-8960-43e0-ae38-c1d3b1974c3f" />
+					<attribute id="Stats" type="FixedString" value="VW_Grovekeeper_Circlet" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="9361907f-ee25-cbdc-02a7-1bad1e73ab8d" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209030" />
+				</node>
+				<!-- End of Grovekeeper's Circlet-->
+
+				<!-- Grovekeeper's Gloves-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h2569e487gae18g4adfgafcfgcaed052e1e5b" version="2" />
+					<attribute id="DisplayName" type="TranslatedString" handle="heb142715g6622g4a87gacbag3498aeefacc0" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_ARM_Gloves_Barbarian_Magic_B" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="1e293c9d-531c-4626-a8d9-09281f2d889f" />
+					<attribute id="Name" type="LSString" value="VW_Grovekeeper_Gloves" />
+					<attribute id="ParentTemplateId" type="FixedString" value="3931efcb-8287-4c25-9322-1595cb24ce8b" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="666cc317-39d0-1364-9f77-87bce03b8dc2" />
+					<attribute id="Stats" type="FixedString" value="VW_Grovekeeper_Gloves" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="95145528-100e-f09e-510a-af3c12d104ac" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144255925564211200" />
+				</node>
+				<!-- End of Grovekeeper's Gloves-->
+
+				<!-- Grovekeeper's Boots-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="hb0a6b169g025fg45a3g84d4g3c3f059f7eae" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h2fc27e43gd8f1g41f0gb89bg0a9cbb8abc4d" version="2" />
+					<attribute id="Icon" type="FixedString" value="Generated_MAG_TerrainWalkers_Boots_Magic" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="584ebbb7-96e9-464a-9774-3c5204946a37" />
+					<attribute id="Name" type="LSString" value="VW_Grovekeeper_Boots" />
+					<attribute id="ParentTemplateId" type="FixedString" value="38f78b0a-4f55-406f-8b28-7c0ec8220905" />
+					<attribute id="Stats" type="FixedString" value="VW_Grovekeeper_Boots" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="0" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="f49ccc5d-a63a-f236-0cc4-5ea30fd69f14" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209030" />
+				</node>
+				<!-- End of Grovekeeper's Boots-->
+
 				<!-- Queldelar -->
-				<node id="GameObjects"> Anduril New V3
+				<node id="GameObjects"> 
 					<attribute id="Description" type="TranslatedString" handle="hb2d66ec5g8f58g42eeg9b0agff45aae54f4f" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="hba3c3e87g3ef5g4c2agb7eag8210533d7c6a" version="1" />
 					<attribute id="LevelName" type="FixedString" value="" />
@@ -14,7 +81,7 @@
 					<attribute id="MapKey" type="FixedString" value="856f2c84-87e5-4133-8fdd-06654c0d0818" />
 					<attribute id="Name" type="LSString" value="VW_Queldelar" />
 					<attribute id="ParentTemplateId" type="FixedString" value="ecfb9f69-5bc3-402e-acd8-c91d57e28403" />
-					<attribute id="VisualTemplate" type="FixedString" value="02818974-193a-4b66-a66b-144dddadfe0e" />
+					<attribute id="VisualTemplate" type="FixedString" value="8201ff66-622e-4e67-b06a-b22bea1565a8" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="406a5b2c-1f47-1927-5e2b-1993ec95fce5" />
 					<attribute id="Stats" type="FixedString" value="VW_Queldelar" />
 					<attribute id="Type" type="FixedString" value="item" />

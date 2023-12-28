@@ -30,6 +30,20 @@ local VW_ArmorSets = {
             "VW_DEATHSTALKER_SET_BONUS_4",
         }
     },
+    {
+        Name = "Grovekeeper",
+        Slots = {
+            { Slot = "Helmet", ID = "b9a2963c-2cfe-47c8-b9a8-fab617a1a7a7", EQ = false }, -- GroveKeeper Circlet
+            { Slot = "Breast", ID = "709fde2d-efb4-44d2-b501-945334f2b1d1", EQ = false }, -- GroveKeeper Jacket
+            { Slot = "Gloves", ID = "1e293c9d-531c-4626-a8d9-09281f2d889f", EQ = false }, -- GroveKeeper Gloves
+            { Slot = "Boots",  ID = "584ebbb7-96e9-464a-9774-3c5204946a37", EQ = false }, -- GroveKeeper Boots
+        },
+        SetBonuses = {
+            "VW_GROVEKEEPER_SET_BONUS_0",
+            "VW_GROVEKEEPER_SET_BONUS_2",
+            "VW_GROVEKEEPER_SET_BONUS_4",
+        }
+    },
 
 }
 

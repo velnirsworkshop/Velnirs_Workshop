@@ -9,3 +9,9 @@ function IsRogue(entity)
     local result = Tagged('ROGUE', entity)
     return ConditionResult(result.Result, {ConditionError("IsNotRogue")})
 end
+
+function IsDruid(entity)
+    local entity = entity or context.Source
+    local result = Tagged('DRUID', entity)
+    return ConditionResult(result.Result, {ConditionError("IsNotDruid")})
+end

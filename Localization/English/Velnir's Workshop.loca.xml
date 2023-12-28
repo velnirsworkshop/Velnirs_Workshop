@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
     <!-- Item Localization-->
+	<!-- Groovekeeper Set -->
+	<!-- Groovekeeper Jacket -->
+	<content contentuid="h5383d722ge977g459eg901dg571a3f0c8582" version="1">Grovekeeper's Jacket</content>
+	<content contentuid="h35a2a68fgfe1ag4774g8f71gea6b9b84e32e" version="1">A verdant green jacket woven from enchanted vines and leaves. It emits a faint aroma of the forest and seems to pulse with the energy of nature.</content>
+	<!-- Groovekeeper Circlet -->
+	<content contentuid="hc65b9ef9g6764g43e2ga061g7e7f57eb7da2" version="1">Grovekeeper's Circlet</content>
+	<content contentuid="ha1d47dabg21c9g4808gaddbgdba6ed47955a" version="1">A delicate circlet adorned with leaves and small blossoms. It exudes a calming aura and enhances the wearer's connection to the natural world.</content>
+	<content contentuid="h5c27ef43gd185g47d4g8f7ag7f88fc203478" version="1">Verdant Renewal</content>
+	<content contentuid="h0022ee36g7ae7g4e3bg936eg21cc938b29b1" version="1">You gather the power of nature and mend yourself and  your allies for [1] &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;. In addition you gain &lt;LSTag Type="Status" Tooltip="VW_STATUS_VR_RESISTANCE"&gt;Grove's Embrace&lt;/LSTag&gt; for [2] turn. </content>
+	<content contentuid="h2287562fg4f6dg4743gbe6fg5aaffe82cf99" version="1">Grove's Embrace</content>
+	<content contentuid="hf1cca7a0g6006g4cccgbfadg67cd0dbe1b09" version="1">While this effect lasts You and Your allies become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all damage for [1] round and gain +[2] &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; </content>
+	<!-- Groovekeeper Gloves -->
+	<content contentuid="heb142715g6622g4a87gacbag3498aeefacc0" version="1">Grovekeeper's Gloves</content>
+	<content contentuid="h2569e487gae18g4adfgafcfgcaed052e1e5b" version="1">Gloves made from supple leather and adorned with small runes resembling leaves. They offer both protection and a closer attunement to the druid's abilities.</content>
+	<content contentuid="h92bc3563gf7e5g411bgb88bgc8c1863d134c" version="1">Nature's Grace</content>
+	<content contentuid="hf63c7634gf46eg45a2gac2eg98a27d5b5c28" version="1">Wherever you successfully heal someone they gain &lt;LSTag Type="Status" Tooltip="VW_NATURES_BLOOM"&gt;Nature's Bloom&lt;/LSTag&gt; effect for [1] turns.</content>
+	<content contentuid="hf63c7634gf46eg45a2gac2eg98a27d5b5c28" version="1">Nature's Bloom</content>
+	<content contentuid="hb2594828gd060g4ff8gbb0bgaf579f64ecc2" version="1">While under the effects of Nature's Bloom you heal for +[1]  additional &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; each turn for [2] turns.</content>
+	<!-- Groovekeeper Boots -->
+	<content contentuid="h2fc27e43gd8f1g41f0gb89bg0a9cbb8abc4d" version="1">Grovekeeper's Boots</content>
+	<content contentuid="hb0a6b169g025fg45a3g84d4g3c3f059f7eae" version="1">Sturdy boots crafted from bark and moss, providing a strong connection to the earth. They allow the druid to move through natural environments with ease.</content>
+	<content contentuid="h8598f3aag2f39g46b5g8c90g9592dc92d4bf" version="1">Path of the Grove</content>
+	<content contentuid="he8f83113g31d6g4a7egb099g683c66327c49" version="1">While enabled you leave behind you a patch of grasping vines to slow down your enemies.</content>
 	<!-- Death Stalker Set -->
 	<content contentuid="hc2a1e65dgdb9eg49e1gb6a0g238ed9b884b2" version="1">DeathStalker's Set Bonus</content>
 	<content contentuid="hc572fca4g9142g40f7g8db7g1837e8570a59" version="1">DeathStalker's Set Bonus 0/4: There are no bonuses</content>
@@ -149,5 +172,6 @@
 	<!-- Conditions Errors-->
 	<content contentuid="hcfdcc279g5df7g46f4g8e01gf28662567dd0" version="1">You must be a &lt;b&gt;&lt;i&gt;Paladin&lt;/i&gt;&lt;/b&gt; to equip this item.</content>
 	<content contentuid="h71879cb1g7445g4f4fgb0c5ga0ffc77d02a9" version="1">You must be a &lt;b&gt;&lt;i&gt;Rogue&lt;/i&gt;&lt;/b&gt; to equip this item.</content>
+	<content contentuid="h7cfa05aagf4f3g4969g8f4cg641ba9886191" version="1">You must be a &lt;b&gt;&lt;i&gt;Druid&lt;/i&gt;&lt;/b&gt; to equip this item.</content>
 </contentList>
 
