@@ -13,13 +13,14 @@ Ext.Events.DoConsoleCommand:Subscribe(function(e)
             "VW_A_Alerias.txt",
             "VW_Arcane_Bolt.txt",
             "VW_AS_Deathstalker.txt",
+            "VW_AS_Grovekeeper.txt",
             "VW_AS_Lightbringer.txt",
             "VW_Sunlight_Spear.txt",
             "VW_Timelord_Robe.txt",
             "VW_W_Aethelion.txt",
             "VW_W_Mpekatsoksulo.txt",
         } do
-          Ext.Stats.LoadStatsFile("Public/Velnir's Workshop/Stats/Generated/Data/"..file)
+          Ext.Stats.LoadStatsFile("Public/Velnir's Workshop/Stats/Generated/Data/"..file,1)
             
         end
     end

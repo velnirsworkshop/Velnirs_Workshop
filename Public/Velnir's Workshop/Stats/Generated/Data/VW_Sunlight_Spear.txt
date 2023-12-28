@@ -1,4 +1,4 @@
-// Sunlight Lightning Spear
+
 
 new entry "VW_Projectile_ST_Spear"
 type "SpellData"
@@ -122,7 +122,6 @@ data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:9"
 data "RootSpellID" "VW_Projectile_ST_Spear"
 data "PowerLevel" "9"
 
-// End of Sunlight Lightning Spear
 
 
 

@@ -2,14 +2,24 @@
 <contentList>
     <!-- Item Localization-->
 	<!-- Groovekeeper Set -->
+	<content contentuid="h9c7d3253g81c1g49f5gb879gae9237680e09" version="1">Grovekeeper's Set Bonus</content>
+	<content contentuid="h517ca322g1160g47d4gb4beg470516ff2ecf" version="1">Grovekeeper's Set Bonus 0/4: There are no bonuses</content>
+	<content contentuid="he1b7ef14ga173g494dg8be8ga372e22bb303" version="1">Grovekeeper's Set Bonus 2/4: There are no bonuses</content>
+	<content contentuid="h0f08675dg40adg44a7g8686gc8614a59a313" version="1">Grovekeeper's Set Bonus 4/4: There are no bonuses</content>
 	<!-- Groovekeeper Jacket -->
 	<content contentuid="h5383d722ge977g459eg901dg571a3f0c8582" version="1">Grovekeeper's Jacket</content>
 	<content contentuid="h35a2a68fgfe1ag4774g8f71gea6b9b84e32e" version="1">A verdant green jacket woven from enchanted vines and leaves. It emits a faint aroma of the forest and seems to pulse with the energy of nature.</content>
+	<content contentuid="h72f7c78dg803fg46d6g8524ga1aae9da68e1" version="1">Chosen of Silvanus</content>
+	<content contentuid="ha1dbce5bgc8d8g4927gaa80g47bf8b097519" version="1">You were Chosen by Silvanus to keep the balance of nature in check.</content>
 	<!-- Groovekeeper Circlet -->
 	<content contentuid="hc65b9ef9g6764g43e2ga061g7e7f57eb7da2" version="1">Grovekeeper's Circlet</content>
 	<content contentuid="ha1d47dabg21c9g4808gaddbgdba6ed47955a" version="1">A delicate circlet adorned with leaves and small blossoms. It exudes a calming aura and enhances the wearer's connection to the natural world.</content>
+	<content contentuid="h880da692g787bg4a51g9a2eg86077dbda4a7" version="1">Nature's Cradle</content>
+	<content contentuid="h86984a2cga24dg45abg9828gb19d78f46583" version="1">While wearing Grovekeeper's Circlet you gain +[1] &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; up to a maximum of 22. 
+	In Addition, you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Nature"&gt;Nature&lt;/LSTag&gt; skill checks
+	and access to the &lt;LSTag Type="Spell" Tooltip="VW_Verdant_Renewal"&gt;Verdant Renewal&lt;/LSTag&gt; spell.</content>
 	<content contentuid="h5c27ef43gd185g47d4g8f7ag7f88fc203478" version="1">Verdant Renewal</content>
-	<content contentuid="h0022ee36g7ae7g4e3bg936eg21cc938b29b1" version="1">You gather the power of nature and mend yourself and  your allies for [1] &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;. In addition you gain &lt;LSTag Type="Status" Tooltip="VW_STATUS_VR_RESISTANCE"&gt;Grove's Embrace&lt;/LSTag&gt; for [2] turn. </content>
+	<content contentuid="h0022ee36g7ae7g4e3bg936eg21cc938b29b1" version="1">You gather the power of nature and mend yourself and  your allies for [1] &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt;. In addition you gain &lt;LSTag Type="Status" Tooltip="VW_STATUS_GROVES_EMBRACE"&gt;Grove's Embrace&lt;/LSTag&gt; for [2] turn. </content>
 	<content contentuid="h2287562fg4f6dg4743gbe6fg5aaffe82cf99" version="1">Grove's Embrace</content>
 	<content contentuid="hf1cca7a0g6006g4cccgbfadg67cd0dbe1b09" version="1">While this effect lasts You and Your allies become &lt;LSTag Tooltip="Resistant"&gt;Resistant&lt;/LSTag&gt; to all damage for [1] round and gain +[2] &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; </content>
 	<!-- Groovekeeper Gloves -->
@@ -17,7 +27,7 @@
 	<content contentuid="h2569e487gae18g4adfgafcfgcaed052e1e5b" version="1">Gloves made from supple leather and adorned with small runes resembling leaves. They offer both protection and a closer attunement to the druid's abilities.</content>
 	<content contentuid="h92bc3563gf7e5g411bgb88bgc8c1863d134c" version="1">Nature's Grace</content>
 	<content contentuid="hf63c7634gf46eg45a2gac2eg98a27d5b5c28" version="1">Wherever you successfully heal someone they gain &lt;LSTag Type="Status" Tooltip="VW_NATURES_BLOOM"&gt;Nature's Bloom&lt;/LSTag&gt; effect for [1] turns.</content>
-	<content contentuid="hf63c7634gf46eg45a2gac2eg98a27d5b5c28" version="1">Nature's Bloom</content>
+	<content contentuid="heb20c5b8g030ag45cdgbe4bg54a79c64323a" version="1">Nature's Bloom</content>
 	<content contentuid="hb2594828gd060g4ff8gbb0bgaf579f64ecc2" version="1">While under the effects of Nature's Bloom you heal for +[1]  additional &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; each turn for [2] turns.</content>
 	<!-- Groovekeeper Boots -->
 	<content contentuid="h2fc27e43gd8f1g41f0gb89bg0a9cbb8abc4d" version="1">Grovekeeper's Boots</content>
