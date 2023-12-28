@@ -11,7 +11,7 @@
 	<content contentuid="h224438begf382g4c6dgaf87gad9d278430dd" version="1">Shadow Assault</content>
 	<content contentuid="hb82c3adfg2034g40cdg853fga2a645281649" version="1">Walk through the shadows appearing behind an enemy within [1] feet attempting to assassinate him. If the attack is successful it is considered a critical.</content>
 	<content contentuid="ha75291d2ge319g4f2agbd9eg964687b848d2" version="1">Death Strike</content>
-	<content contentuid="h83fbc94agce1dg47b5g8d29g8d2cbfcdb420" version="1">You strike your target through the shadows with such masterful precision that can die instantly if his &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are less than 100.</content>
+	<content contentuid="h83fbc94agce1dg47b5g8d29g8d2cbfcdb420" version="1">You strike your target through the shadows with such masterful precision that can die instantly if his &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are less than 50.</content>
 	<!-- Deathstalker Cuirass-->
 	<content contentuid="hd7846674g6bb2g40a0g9f43gae138da90c41" version="1">DeathStalker's Cuirass</content> 
 	<content contentuid="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1">A shadow-infused chestplate that melds seamlessly with the rogue's movements, providing both protection and stealth. The cuirass is adorned with dark symbols that seem to pulse with a mysterious energy.
@@ -141,6 +141,9 @@
 	<content contentuid="0b1e2522-e4b3-444d-82d4-13376dcc25b8" version="2">Throws a conjured magical spear of Sunlight and Lightning dealing [1] damage and [2] damage and Stunning the target.</content>
 	
 	<content contentuid="h8e9f53d3gbce9g47a8ga062g4fbd160df209" version="1">VW_Avatar_Of_Light_Cooldown</content>
+
+	<content contentuid="h2fd288fdg03a1g4418gaa7bg55778650a3c0" version="1">AVADA KEDAVRA</content>
+	<content contentuid="hf64674edge1e1g4e3eg963agefab0be7140f" version="1">There was a flash of blinding green light and a rushing sound, as though a vast, invisible something was soaring through the air — instantaneously the spider rolled over onto its back, unmarked, but unmistakably dead.</content>
 	
 	<!-- Conditions Errors-->
 	<content contentuid="hcfdcc279g5df7g46f4g8e01gf28662567dd0" version="1">You must be a &lt;b&gt;&lt;i&gt;Paladin&lt;/i&gt;&lt;/b&gt; to equip this item.</content>

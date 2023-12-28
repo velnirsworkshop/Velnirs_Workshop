@@ -66,10 +66,6 @@ data "Proficiency Group" ""
 data "PassivesOnEquip" "VW_PLightbringer_Greaves"
 data "Unique" "1"
 
-
-
-    
-
 new entry "VW_Divine_Halo"
 type "PassiveData"
 data "DisplayName" "h14be09c9ga1deg4760g8956g474b7e625758;1"
@@ -96,7 +92,6 @@ data "Properties" "Highlighted"
 data "BoostContext" "OnEquip;OnCreate"
 data "Boosts" "CharacterWeaponDamage(1d8, Radiant)"
 
-
 new entry "VW_PLightbringer_Greaves"
 type "PassiveData"
 data "DisplayName" "h7ab1ff0eg0b6fg4a3dg8bbcg60856044c517;1"
@@ -105,9 +100,6 @@ data "DescriptionParams" ""
 data "Properties" "Highlighted"
 data "BoostContext" "OnEquip;OnCreate"
 data "Boosts" "StatusImmunity(SG_Prone);StatusImmunity(SG_Restrained);StatusImmunity(SG_Stunned);StatusImmunity(SG_CanBePickedUp);StatusImmunity(SG_Approaching);StatusImmunity(SG_Taunted);StatusImmunity(SG_Fleeing);"
-
-
-
 
 new entry "VW_DIVINE_HALO_RESURRECT_TECHNICAL"
 type "StatusData"
@@ -231,6 +223,7 @@ data "Icon" "VW_AOL_Heal_Aura"
 data "StackId" "VW_AOL_HEALING"
 data "ApplyEffect" "48c3e887-dfb2-4af7-bc3d-7874bbaffa45"
 data "EndEffect" "48c3e887-dfb2-4af7-bc3d-7874bbaffa45"
+data "StatusEffect" "a340c5c1-6ec4-4ecd-a037-643e3196172c"
 data "TickType" "StartTurn"
 data "TickFunctors" "RegainHitPoints(1d8+Cause.CharismaModifier+ProficiencyBonus);"
 data "OnApplyFunctors" "RegainHitPoints(1d8+Cause.CharismaModifier+ProficiencyBonus);ApplyStatus(VW_STATUS_AOL_RESISTANCE,100, 4);"

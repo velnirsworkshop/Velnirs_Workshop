@@ -3,7 +3,6 @@ if VWLib[1] ~= nil then VWLib = VWLib[1] end
 local VAdd = Ext.Require("VW_Additions.lua")
 if VAdd[1] ~= nil then VAdd = VAdd[1] end
 
-
 Mods.V_Workshop.VWLib = VWLib
 Mods.V_Workshop.VAdd = VAdd
 
@@ -45,4 +44,9 @@ end)
 
 Ext.Events.GameStateChanged:Subscribe(VWLib.GetTeamMembers)
 
+
+Ext.RegisterConsoleCommand("anim", function ( cmd, uuid )
+	local host = Osi.GetHostCharacter()
+    Osi.PlayAnimation(host, uuid, "")
+end)
 
