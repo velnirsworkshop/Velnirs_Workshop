@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="SoundBank">
+		<node id="SoundBank">
+			<children>
+				<node id="Resource">
+					<attribute id="DisplayName" type="LSString" value="" />
+					<attribute id="Duration" type="float" value="4" />
+					<attribute id="GMSoundCategory" type="int8" value="0" />
+					<attribute id="GMSubSection" type="LSString" value="" />
+					<attribute id="ID" type="FixedString" value="0dfecf8d-8e5b-4b08-8d17-e9ec2e370cab" />
+					<attribute id="Internal" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="MaxDistance" type="float" value="50" />
+					<attribute id="Name" type="LSString" value="VW_Action_Cast_Avada_Kedavra" />
+					<attribute id="Preload" type="bool" value="False" />
+					<attribute id="SoundBank" type="FixedString" value="" />
+					<attribute id="SoundCategory" type="int8" value="0" />
+					<attribute id="SoundCodec" type="int8" value="7" />
+					<attribute id="SoundEvent" type="FixedString" value="VW_Action_Cast_Avada_Kedavra" />
+					<attribute id="SoundEventID" type="uint32" value="11111" />
+					<attribute id="SoundEventUUID" type="guid" value="731df1d2-216a-49a5-b358-85633ae00954" />
+					<attribute id="SourceFile" type="LSString" value="Public\Velnir's Workshop\Assets\Sound\VW_Avada_Kedavra.wav" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+				</node>
+            </children>
+		</node>
+	</region>
+</save>    

@@ -10,7 +10,8 @@
 	<content contentuid="h5383d722ge977g459eg901dg571a3f0c8582" version="1">Grovekeeper's Jacket</content>
 	<content contentuid="h35a2a68fgfe1ag4774g8f71gea6b9b84e32e" version="1">A verdant green jacket woven from enchanted vines and leaves. It emits a faint aroma of the forest and seems to pulse with the energy of nature.</content>
 	<content contentuid="h72f7c78dg803fg46d6g8524ga1aae9da68e1" version="1">Chosen of Silvanus</content>
-	<content contentuid="ha1dbce5bgc8d8g4927gaa80g47bf8b097519" version="1">You were Chosen by Silvanus to keep the balance of nature in check.</content>
+	<content contentuid="ha1dbce5bgc8d8g4927gaa80g47bf8b097519" version="1">You were to be the Avatar of Silvanus to protect and keep the balance of nature in check. &lt;br&gt;
+	Your wildshape now benefits from all equipped items and their effects.</content>
 	<!-- Groovekeeper Circlet -->
 	<content contentuid="hc65b9ef9g6764g43e2ga061g7e7f57eb7da2" version="1">Grovekeeper's Circlet</content>
 	<content contentuid="ha1d47dabg21c9g4808gaddbgdba6ed47955a" version="1">A delicate circlet adorned with leaves and small blossoms. It exudes a calming aura and enhances the wearer's connection to the natural world.</content>
@@ -28,7 +29,7 @@
 	<content contentuid="h92bc3563gf7e5g411bgb88bgc8c1863d134c" version="1">Nature's Grace</content>
 	<content contentuid="hf63c7634gf46eg45a2gac2eg98a27d5b5c28" version="1">Wherever you successfully heal someone they gain &lt;LSTag Type="Status" Tooltip="VW_NATURES_BLOOM"&gt;Nature's Bloom&lt;/LSTag&gt; effect for [1] turns.</content>
 	<content contentuid="heb20c5b8g030ag45cdgbe4bg54a79c64323a" version="1">Nature's Bloom</content>
-	<content contentuid="hb2594828gd060g4ff8gbb0bgaf579f64ecc2" version="1">While under the effects of Nature's Bloom you heal for +[1]  additional &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; each turn for [2] turns.</content>
+	<content contentuid="hb2594828gd060g4ff8gbb0bgaf579f64ecc2" version="1">While under the effects of Nature's Bloom you gain +[1]  additional &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; each turn for [2] turns.</content>
 	<!-- Groovekeeper Boots -->
 	<content contentuid="h2fc27e43gd8f1g41f0gb89bg0a9cbb8abc4d" version="1">Grovekeeper's Boots</content>
 	<content contentuid="hb0a6b169g025fg45a3g84d4g3c3f059f7eae" version="1">Sturdy boots crafted from bark and moss, providing a strong connection to the earth. They allow the druid to move through natural environments with ease.</content>
@@ -47,11 +48,11 @@
 	<content contentuid="h83fbc94agce1dg47b5g8d29g8d2cbfcdb420" version="1">You strike your target through the shadows with such masterful precision that can die instantly if his &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; are less than 50.</content>
 	<!-- Deathstalker Cuirass-->
 	<content contentuid="hd7846674g6bb2g40a0g9f43gae138da90c41" version="1">DeathStalker's Cuirass</content> 
-	<content contentuid="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1">A shadow-infused chestplate that melds seamlessly with the rogue's movements, providing both protection and stealth. The cuirass is adorned with dark symbols that seem to pulse with a mysterious energy.
-	Deathstalker Set Bonus:  
-	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_0"&gt;Deathstalker Set Bonus 0/4&lt;/LSTag&gt; 
-	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_2"&gt;Deathstalker Set Bonus 2/4&lt;/LSTag&gt; 
-	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_4"&gt;Deathstalker Set Bonus 4/4&lt;/LSTag&gt;
+	<content contentuid="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1">A shadow-infused chestplate that melds seamlessly with the rogue's movements, providing both protection and stealth. The cuirass is adorned with dark symbols that seem to pulse with a mysterious energy.&lt;br&gt;
+	Deathstalker Set Bonus: &lt;br&gt; 
+	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_0"&gt;Deathstalker Set Bonus 0/4&lt;/LSTag&gt; &lt;br&gt;
+	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_2"&gt;Deathstalker Set Bonus 2/4&lt;/LSTag&gt; &lt;br&gt;
+	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_4"&gt;Deathstalker Set Bonus 4/4&lt;/LSTag&gt; &lt;br&gt;
 	Only Equippable by a &lt;b&gt;&lt;i&gt;Rogue.&lt;/i&gt;&lt;/b&gt;
 	</content> 
 	<content contentuid="hcefe7e5dg8e08g4bd8gb404g0ce8e51f85a7" version="1">Master Assasin</content>
@@ -177,7 +178,8 @@
 	<content contentuid="h8e9f53d3gbce9g47a8ga062g4fbd160df209" version="1">VW_Avatar_Of_Light_Cooldown</content>
 
 	<content contentuid="h2fd288fdg03a1g4418gaa7bg55778650a3c0" version="1">AVADA KEDAVRA</content>
-	<content contentuid="hf64674edge1e1g4e3eg963agefab0be7140f" version="1">There was a flash of blinding green light and a rushing sound, as though a vast, invisible something was soaring through the air — instantaneously the spider rolled over onto its back, unmarked, but unmistakably dead.</content>
+	<content contentuid="hf64674edge1e1g4e3eg963agefab0be7140f" version="1">There was a flash of blinding green light and a rushing sound, as though a vast, invisible something was soaring through the air — instantaneously the spider rolled over onto its back, unmarked, but unmistakably dead.
+	If by some miracle the target resists the spell he still takes 100 damage from the brute raw arcane energy that hitted him.</content>
 	
 	<!-- Conditions Errors-->
 	<content contentuid="hcfdcc279g5df7g46f4g8e01gf28662567dd0" version="1">You must be a &lt;b&gt;&lt;i&gt;Paladin&lt;/i&gt;&lt;/b&gt; to equip this item.</content>

@@ -1,20 +1,35 @@
 
 new treasuretable "TUT_Chest_Potions"
 CanMerge 1
-new subtable "1,1"
+new subtable "-1"
 object category "I_Velnir's Workshop_Alerias_Bracers_of_Arcane_Power",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Robe_Timelord",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Aethelion",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Lightbringer_Armor",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Lightbringer_Diadem",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Lightbringer_Gauntlets",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Lightbringer_Greaves",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Deathstalker_Cuirass",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Deathstalker_Deathmask",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Deathstalker_HandGuards",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Deathstalker_Boots",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Grovekeeper_Circlet",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Grovekeeper_Gloves",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Grovekeeper_Jacket",1,0,0,0,0,0,0,0
+new subtable "-1"
 object category "I_VW_Grovekeeper_Boots",1,0,0,0,0,0,0,0
+new subtable "-1"
 

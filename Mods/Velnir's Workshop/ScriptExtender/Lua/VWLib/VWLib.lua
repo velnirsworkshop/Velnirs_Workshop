@@ -1,4 +1,4 @@
-local VAdd = Ext.Require("VW_Additions.lua")
+local VAdd = Ext.Require("Server/VW_Additions.lua")
 if VAdd[1] ~= nil then VAdd = VAdd[1] end
 
 local VWLib = {}

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="4" build="602" />
+	<version major="4" minor="0" revision="4" build="602" lslib_meta="v1,bswap_guids" />
 	<region id="PhysicsBank">
 		<node id="PhysicsBank">
 			<children>
@@ -18,7 +18,7 @@
 	<region id="MaterialBank">
 		<node id="MaterialBank">
 			<children>
-				<node id="Resource"> <!-- Queldelar -->
+				<node id="Resource">
 					<attribute id="DiffusionProfileUUID" type="FixedString" value="" />
 					<attribute id="ID" type="FixedString" value="857f937c-5461-4cdd-86bd-f306539eedbd" />
 					<attribute id="Localized" type="bool" value="False" />
@@ -120,12 +120,11 @@
 								</node>
 							</children>
 						</node>
-						
 						<node id="Texture2DParameters">
 							<attribute id="Enabled" type="bool" value="True" />
 							<attribute id="ExportAsPreset" type="bool" value="True" />
 							<attribute id="GroupName" type="FixedString" value="0Textures" />
-							<attribute id="ID" type="FixedString" value="a90992f1-5dbf-9893-dba2-35386614d20d" /> <!--shared weapon gradient A-->
+							<attribute id="ID" type="FixedString" value="a90992f1-5dbf-9893-dba2-35386614d20d" />
 							<attribute id="ParameterName" type="FixedString" value="Gradients" />
 							<attribute id="UniformName" type="FixedString" value="Texture2DParameter_Gradients_DefaultWrapSampler" />
 							<children>
@@ -225,7 +224,6 @@
 								</node>
 							</children>
 						</node>
-						
 						<node id="Texture2DParameters">
 							<attribute id="Enabled" type="bool" value="True" />
 							<attribute id="ExportAsPreset" type="bool" value="True" />
@@ -278,21 +276,14 @@
 								</node>
 							</children>
 						</node>
-						
 					</children>
 				</node>
-
 			</children>
-		</node>		
+		</node>
 	</region>
 	<region id="TextureBank">
 		<node id="TextureBank">
 			<children>
-
-			<!-- Queldelar -->
-
-
-
 				<node id="Resource">
 					<attribute id="Depth" type="int32" value="1" />
 					<attribute id="Height" type="int32" value="1024" />
@@ -335,17 +326,13 @@
 					<attribute id="Width" type="int32" value="1024" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855943" />
 				</node>
-
-
-			<!-- end Queldelar -->
-
 			</children>
 		</node>
 	</region>
 	<region id="VisualBank">
 		<node id="VisualBank">
 			<children>
-				<node id="Resource"> <!--QuelDelar-->
+				<node id="Resource">
 					<attribute id="AttachBone" type="FixedString" value="" />
 					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
 					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
@@ -386,8 +373,7 @@
 						</node>
 					</children>
 				</node>
-
-				<node id="Resource"> <!--Side mounted QuelDelar-->
+				<node id="Resource">
 					<attribute id="AttachBone" type="FixedString" value="" />
 					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
 					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
@@ -395,7 +381,7 @@
 					<attribute id="BoundsMin" type="fvec3" value="-0.06598151 -0.02155516 -0.6044511" />
 					<attribute id="Center" type="fvec3" value="-0.0003427267 0.005501673 -0.2100399" />
 					<attribute id="HairType" type="uint8" value="0" />
-					<attribute id="ID" type="FixedString" value="02818974-193a-4b66-a66b-144dddadfe0e" /> <!-- visual template -->
+					<attribute id="ID" type="FixedString" value="02818974-193a-4b66-a66b-144dddadfe0e" />
 					<attribute id="Initialized" type="bool" value="True" />
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="MaterialType" type="uint8" value="4" />
@@ -428,7 +414,6 @@
 						</node>
 					</children>
 				</node>
-	
 			</children>
 		</node>
 	</region>
