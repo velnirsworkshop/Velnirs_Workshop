@@ -21,7 +21,7 @@
 					<attribute id="SoundEvent" type="FixedString" value="VW_Action_Cast_Avada_Kedavra" />
 					<attribute id="SoundEventID" type="uint32" value="11111" />
 					<attribute id="SoundEventUUID" type="guid" value="731df1d2-216a-49a5-b358-85633ae00954" />
-					<attribute id="SourceFile" type="LSString" value="Public\Velnir's Workshop\Assets\Sound\VW_Avada_Kedavra.wav" />
+					<attribute id="SourceFile" type="LSString" value="Public\Shared\Assets\Sound\VW_Avada_Kedavra.wav" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
 				</node>
             </children>
