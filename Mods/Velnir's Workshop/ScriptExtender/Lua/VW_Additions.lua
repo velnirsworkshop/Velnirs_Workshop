@@ -33,15 +33,29 @@ local VW_ArmorSets = {
     {
         Name = "Grovekeeper",
         Slots = {
-            { Slot = "Helmet", ID = "b9a2963c-2cfe-47c8-b9a8-fab617a1a7a7", EQ = false }, -- GroveKeeper Circlet
-            { Slot = "Breast", ID = "709fde2d-efb4-44d2-b501-945334f2b1d1", EQ = false }, -- GroveKeeper Jacket
-            { Slot = "Gloves", ID = "1e293c9d-531c-4626-a8d9-09281f2d889f", EQ = false }, -- GroveKeeper Gloves
-            { Slot = "Boots",  ID = "584ebbb7-96e9-464a-9774-3c5204946a37", EQ = false }, -- GroveKeeper Boots
+            { Slot = "Helmet", ID = "b9a2963c-2cfe-47c8-b9a8-fab617a1a7a7", EQ = false }, -- Grovekeeper Circlet
+            { Slot = "Breast", ID = "709fde2d-efb4-44d2-b501-945334f2b1d1", EQ = false }, -- Grovekeeper Jacket
+            { Slot = "Gloves", ID = "1e293c9d-531c-4626-a8d9-09281f2d889f", EQ = false }, -- Grovekeeper Gloves
+            { Slot = "Boots",  ID = "584ebbb7-96e9-464a-9774-3c5204946a37", EQ = false }, -- Grovekeeper Boots
         },
         SetBonuses = {
             "VW_GROVEKEEPER_SET_BONUS_0",
             "VW_GROVEKEEPER_SET_BONUS_2",
             "VW_GROVEKEEPER_SET_BONUS_4",
+        }
+    },
+    {
+        Name = "Timeweaver",
+        Slots = {
+            { Slot = "Helmet", ID = "aec32ec8-4719-4a5d-a1fb-c00007ce896d", EQ = false }, -- Timeweaver Crown
+            { Slot = "Breast", ID = "c955b876-e2db-46cf-b640-833ed1565470", EQ = false }, -- Timeweaver Robe
+            { Slot = "Gloves", ID = "f011887c-3e9f-4a6a-85b9-4172add76f48", EQ = false }, -- Alerias Bracers
+            { Slot = "Boots",  ID = "f70115f5-7342-43de-a170-6b05b5130c0b", EQ = false }, -- Timeweaver Boots
+        },
+        SetBonuses = {
+            "VW_TIMEWEAVER_SET_BONUS_0",
+            "VW_TIMEWEAVER_SET_BONUS_2",
+            "VW_TIMEWEAVER_SET_BONUS_4",
         }
     },
 
@@ -113,6 +127,7 @@ local function VW_SetBonus(VW_character)
     end
 end
 VAdd["VW_SetBonus"] = VW_SetBonus
+
 
 return VAdd
 

@@ -291,7 +291,7 @@
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar_NM" />
 					<attribute id="SRGB" type="bool" value="False" />
-					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/VW_HUM_Queldelar/VW_HUM_Queldelar_NM.dds" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/Humans/VW_HUM_Queldelar/VW_HUM_Queldelar_NM.dds" />
 					<attribute id="Streaming" type="bool" value="True" />
 					<attribute id="Template" type="FixedString" value="VW_HUM_Queldelar_NM" />
 					<attribute id="Type" type="int32" value="1" />
@@ -305,7 +305,7 @@
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar_BM" />
 					<attribute id="SRGB" type="bool" value="True" />
-					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/VW_HUM_Queldelar/VW_HUM_Queldelar_BM.dds" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/Humans/VW_HUM_Queldelar/VW_HUM_Queldelar_BM.dds" />
 					<attribute id="Streaming" type="bool" value="True" />
 					<attribute id="Template" type="FixedString" value="VW_HUM_Queldelar_BM" />
 					<attribute id="Type" type="int32" value="1" />
@@ -319,7 +319,7 @@
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="Name" type="LSString" value="VW_HUM_Queldelar_PM" />
 					<attribute id="SRGB" type="bool" value="False" />
-					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Humans/VW_HUM_Queldelar/VW_HUM_Queldelar_PM.dds" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/Humans/VW_HUM_Queldelar/VW_HUM_Queldelar_PM.dds" />
 					<attribute id="Streaming" type="bool" value="True" />
 					<attribute id="Template" type="FixedString" value="VW_HUM_Queldelar_PM" />
 					<attribute id="Type" type="int32" value="1" />
@@ -351,9 +351,9 @@
 					<attribute id="SkeletonSlot" type="FixedString" value="" />
 					<attribute id="Slot" type="FixedString" value="Unassigned" />
 					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
-					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.GR2" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.GR2" />
 					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
-					<attribute id="Template" type="FixedString" value="Generated/Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.Dummy_VW_HUM_Queldelar.0" />
+					<attribute id="Template" type="FixedString" value="Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.Dummy_VW_HUM_Queldelar.0" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855932" />
 					<children>
 						<node id="Base" />
@@ -392,9 +392,9 @@
 					<attribute id="SkeletonSlot" type="FixedString" value="" />
 					<attribute id="Slot" type="FixedString" value="Unassigned" />
 					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
-					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.GR2" />
+					<attribute id="SourceFile" type="LSString" value="Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.GR2" />
 					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
-					<attribute id="Template" type="FixedString" value="Generated/Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.Dummy_VW_HUM_Queldelar.0" />
+					<attribute id="Template" type="FixedString" value="Public/Shared/Assets/Weapons/Resources/VW_HUM_Queldelar_Mesh.Dummy_VW_HUM_Queldelar.0" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855932" />
 					<children>
 						<node id="Base" />

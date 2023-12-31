@@ -7,7 +7,7 @@
 				<node id="Resource">
 					<attribute id="DisplayName" type="LSString" value="" />
 					<attribute id="Duration" type="float" value="4" />
-					<attribute id="ID" type="FixedString" value="ad5079b0-c90a-4aec-8622-36467421b028" />
+					<attribute id="ID" type="FixedString" value="c08f873d-b5fc-478e-a894-5b44adf537dd" />
 					<attribute id="Internal" type="bool" value="True" />
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="MaxDistance" type="float" value="50" />
@@ -17,8 +17,8 @@
 					<attribute id="SoundCategory" type="int8" value="0" />
 					<attribute id="SoundCodec" type="int8" value="7" />
 					<attribute id="SoundEvent" type="FixedString" value="VW_Action_Cast_Avada_Kedavra" />
-					<attribute id="SoundEventID" type="uint32" value="" />
-					<attribute id="SoundEventUUID" type="guid" value="7c2137b6-ec2c-4eac-9056-b93a3f136c24" />
+					<attribute id="SoundEventID" type="uint32" value="11113" />
+					<attribute id="SoundEventUUID" type="guid" value="d09d0320-3616-4441-99d6-60c64b6f580f" />
 					<attribute id="SourceFile" type="LSString" value="Public\Velnir's Workshop\Assets\Sound\VW_Avada_Kedavra.wav" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758165" />
 				</node>

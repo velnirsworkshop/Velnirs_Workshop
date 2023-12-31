@@ -1,6 +1,6 @@
 local VWLib = Ext.Require("VWLib/VWLib.lua")
 if VWLib[1] ~= nil then VWLib = VWLib[1] end
-local VAdd = Ext.Require("Server/VW_Additions.lua")
+local VAdd = Ext.Require("VW_Additions.lua")
 if VAdd[1] ~= nil then VAdd = VAdd[1] end
 
 Mods.V_Workshop.VWLib = VWLib
@@ -26,8 +26,6 @@ Ext.Events.DoConsoleCommand:Subscribe(function(e)
     end
 end)
 
-Ext.Stats.GetModifierAttributes("DisableEquipmentSlots")
-
 Ext.Osiris.RegisterListener("TemplateEquipped", 2, "after", function(_, VW_character)
     VAdd.VW_SetCheck(VW_character)
     print("Registered Equip")
@@ -42,11 +40,23 @@ Ext.Osiris.RegisterListener("TemplateUnequipped", 2, "after", function(_, VW_cha
     print("Register Set")
 end)
 
+Ext.Osiris.RegisterListener("ShapeshiftChanged",4,"before",function(VW_character,VW_race,VW_gender,VW_ss_status)
+    _D(print(VW_character))
+    _D(print(VW_race))
+    _D(print(VW_gender))
+    _D(print(VW_ss_status))
+    
+end)
+
+
+
 Ext.Events.GameStateChanged:Subscribe(VWLib.GetTeamMembers)
 
-
+--[[
 Ext.RegisterConsoleCommand("anim", function ( cmd, uuid )
 	local host = Osi.GetHostCharacter()
     Osi.PlayAnimation(host, uuid, "")
 end)
+
+]]
 

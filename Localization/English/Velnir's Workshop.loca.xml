@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
     <!-- Item Localization-->
+
+	<!-- Timelord Set-->
+	<content contentuid="hde4657dcg311ag4e9ag8bd1g648b380d389a" version="1">Timeweaver's Set Bonus</content>
+	<content contentuid="ha5d831a3g4a4eg4348gb45fg0131c3df8947" version="1">Timeweaver's Set Bonus 0/4: There are no bonuses</content>
+	<content contentuid="hb8c53162gba2eg4f5eg97cdg53db01fb10fa" version="1">Timeweaver's Set Bonus 2/4: There are no bonuses</content>
+	<content contentuid="hac94edd2gd3c2g4ecega436g9184e12ecd13" version="1">Timeweaver's Set Bonus 4/4: There are no bonuses</content>
+
+	<!--  Robe of the Timelord-->
+	<content contentuid="h6392bdd6gf697g48b5g86f0gda6fc80dfa41" version="1">Robe of the Timelord</content>
+	<content contentuid="h1264ec47g39aag466fg892fg1adc1132a1b4" version="1">This exquisite robe, woven from ethereal strands that shimmer with a celestial glow, bears the unmistakable mark of Velen Lightsbane. 
+	Robe of the Timelord are a manifestation of the god's mastery over time itself. The fabric seems to dance with an otherworldly energy, and constellations subtly shift across its surface.</content>  
+
+	<!-- Aleria's Bracers -->
+	<content contentuid="h95fa5136g51f9g458dgac16g0502793754a6" version="1">Aleria's Bracers of Arcane Power</content>
+	<content contentuid="hfbde6664g300bg481ag9206gbf58d292b3ca" version="1">Bracers of Aleria Windrunner , mother of Velen and Lorenala , High Sorceress of Elendia. These Bracers are the epitome of her Mastery of the Weave.</content>
+	<!--  Aleria's Blessing-->
+	<content contentuid="hcaf95ecbg917bg42fegbfcbg2ecbeab40409" version="1">Aleria's Blessing</content>
+	<content contentuid="h285f579cg5da7g4365gabb4gd15ad7a1576e" version="1">Empowered by Aleria's Blessing giving you deeper access to your inner power and grants you the power to tap into the weave to gain +[1] &lt;LSTag Tooltip="Sorcery Points"&gt;Max Sorcery Points&lt;/LSTag&gt;.</content>
+	<!-- Aleria's Weave Mastery-->
+	<content contentuid="hcfd66fbege278g41b3g9b05g832eb195f1c9" version="2">Aleria's Weave Mastery</content>
+	<content contentuid="hbf379b4eg750cg4a49gb834g70dc2fa100f9" version="2">You gain a +[1] bonus to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; as long as you are not wearing armour or holding a shield. &lt;br&gt;
+	In addition you gain +[1] &lt;LSTag Tooltip="Sorcery Points"&gt;Max Sorcery Points&lt;/LSTag&gt;.</content>
+	<!-- End of Aleria's Bracers -->
+
+	<!-- Timelord's Boots-->
+	<content contentuid="hb434fe16gd74bg4caag9676gefe043f7f2b4" version="1">Timelord's Boots</content>
+	<content contentuid="h9d20ad70g8611g45b5gbf34g5984d6516f61" version="1">Boots adorned with arcane symbols that seem to ripple with temporal energy. The leather is imbued with threads of magic that dance with the ebb and flow of time.</content>
+	<content contentuid="ha297c391g984fg4c76gb22bg800707405baf" version="1">Time stands Still</content>
+	<content contentuid="hfdafbe87g3d6eg4d5ega159gb3508bd6146e" version="1">TBD</content>
+
+	<!-- Timelord's Crown-->
+	<content contentuid="h2948402cgeb9bg4162ga7c7g25998311a544" version="1">Timelord's Crown</content>
+	<content contentuid="h41a04a38g3ed9g4868g8ae2ga7268031c3f0" version="1">A regal crown adorned with a central gem that captures the essence of a swirling cosmic nebula. The diadem hums with the power to manipulate time and space.</content>
+	<content contentuid="h9fab00d2g08c7g406agbea9g163a86b65767" version="1">Echoes of Time</content>
+	<content contentuid="h4f0b4d63g5afbg4e3dg8c63gc6d0caa119da" version="1">TBD</content>
+
+
 	<!-- Groovekeeper Set -->
 	<content contentuid="h9c7d3253g81c1g49f5gb879gae9237680e09" version="1">Grovekeeper's Set Bonus</content>
 	<content contentuid="h517ca322g1160g47d4gb4beg470516ff2ecf" version="1">Grovekeeper's Set Bonus 0/4: There are no bonuses</content>
@@ -29,7 +66,7 @@
 	<content contentuid="h92bc3563gf7e5g411bgb88bgc8c1863d134c" version="1">Nature's Grace</content>
 	<content contentuid="hf63c7634gf46eg45a2gac2eg98a27d5b5c28" version="1">Wherever you successfully heal someone they gain &lt;LSTag Type="Status" Tooltip="VW_NATURES_BLOOM"&gt;Nature's Bloom&lt;/LSTag&gt; effect for [1] turns.</content>
 	<content contentuid="heb20c5b8g030ag45cdgbe4bg54a79c64323a" version="1">Nature's Bloom</content>
-	<content contentuid="hb2594828gd060g4ff8gbb0bgaf579f64ecc2" version="1">While under the effects of Nature's Bloom you gain +[1]  additional &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; each turn for [2] turns.</content>
+	<content contentuid="hb2594828gd060g4ff8gbb0bgaf579f64ecc2" version="1">While under the effects of Nature's Bloom you gain +[1] &lt;LSTag Tooltip="TemporaryHitPoints"&gt;temporary hit points&lt;/LSTag&gt; each turn for [2] turns.</content>
 	<!-- Groovekeeper Boots -->
 	<content contentuid="h2fc27e43gd8f1g41f0gb89bg0a9cbb8abc4d" version="1">Grovekeeper's Boots</content>
 	<content contentuid="hb0a6b169g025fg45a3g84d4g3c3f059f7eae" version="1">Sturdy boots crafted from bark and moss, providing a strong connection to the earth. They allow the druid to move through natural environments with ease.</content>
@@ -79,10 +116,7 @@
 	Only Equippable by a &lt;b&gt;&lt;i&gt;Rogue.&lt;/i&gt;&lt;/b&gt;</content>
 	<content contentuid="h1fefde6ag9ce9g425bgb9e9g32a2acb0d534" version="1">Shadow Walker</content>
 	<content contentuid="hbdb661e9gfe0cg47f0gae2eg9ea6bc38e4aa" version="1">You gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="Stealth"&gt;Stealth&lt;/LSTag&gt; and increased &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt; by [2]. </content>
-	 <!--  Robe of the Timelord-->
-	<content contentuid="h1264ec47g39aag466fg892fg1adc1132a1b4" version="1">This exquisite robe, woven from ethereal strands that shimmer with a celestial glow, bears the unmistakable mark of Velen Lightsbane. 
-	Robe of the Timelord are a manifestation of the god's mastery over time itself. The fabric seems to dance with an otherworldly energy, and constellations subtly shift across its surface.</content>  
-	<content contentuid="h6392bdd6gf697g48b5g86f0gda6fc80dfa41" version="1">Robe of the Timelord</content> 
+	 
 	<!--  Quel'Delar-->
 	<content contentuid="hb2d66ec5g8f58g42eeg9b0agff45aae54f4f" version="1">Quel'Delar, a celestial weapon, was meticulously crafted by Tyralion Lightsbane in the ethereal realms. 
 	Infused with raw arcane power and adorned with potent runic markings, this legendary blade stands as a symbol of celestial might on the game's battlefield.</content>
@@ -137,16 +171,7 @@
 	In addition, you cannot be &lt;LSTag Type="Status" Tooltip="PARALYZED"&gt;Paralysed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="RESTRAINED"&gt;Restrained&lt;/LSTag&gt;. </content>
 	<!-- End of Lightbringer Set -->
 	
-	<!--  Aleria's Bracers of Arcane Power-->
-	<content contentuid="hfbde6664g300bg481ag9206gbf58d292b3ca" version="1">Bracers of Aleria Windrunner , mother of Velen and Lorenala , High Sorceress. These Bracers are the epitome of Metamagic Powers</content>
-	<content contentuid="h95fa5136g51f9g458dgac16g0502793754a6" version="1">Aleria's Bracers of Arcane Power</content>
-	<!--  Aleria's Blessing-->
-	<content contentuid="h285f579cg5da7g4365gabb4gd15ad7a1576e" version="1">Empowered by Aleria's Blessing giving you deeper access to your inner power and grants you the power to tap into the weave to gain +[1] &lt;LSTag Tooltip="Sorcery Points"&gt;Max Sorcery Points&lt;/LSTag&gt;.</content>
-	<content contentuid="hcaf95ecbg917bg42fegbfcbg2ecbeab40409" version="1">Aleria's Blessing</content>
-	<!-- Aleria's Armor-->
-	<content contentuid="hbf379b4eg750cg4a49gb834g70dc2fa100f9" version="2">You gain a +[1] bonus to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; as long as you are not wearing armour or holding a shield.</content>
-	<content contentuid="hcfd66fbege278g41b3g9b05g832eb195f1c9" version="2">Aleria's Weave Protection</content>
-	<!-- End of Aleria's Bracers of Arcane Power-->
+	
 
 	<!-- Mpekatsoksulo-->
     <content contentuid="h68a55188g2cdag4ca0g8a6eg1a5fdb933827" version="1"> To Mpekatsoksulo einai to TOP MPEKATSOKSULO GIA MPEKATSOKSULIASMA</content>
@@ -185,5 +210,5 @@
 	<content contentuid="hcfdcc279g5df7g46f4g8e01gf28662567dd0" version="1">You must be a &lt;b&gt;&lt;i&gt;Paladin&lt;/i&gt;&lt;/b&gt; to equip this item.</content>
 	<content contentuid="h71879cb1g7445g4f4fgb0c5ga0ffc77d02a9" version="1">You must be a &lt;b&gt;&lt;i&gt;Rogue&lt;/i&gt;&lt;/b&gt; to equip this item.</content>
 	<content contentuid="h7cfa05aagf4f3g4969g8f4cg641ba9886191" version="1">You must be a &lt;b&gt;&lt;i&gt;Druid&lt;/i&gt;&lt;/b&gt; to equip this item.</content>
+	<content contentuid="h24674370g6338g4ebdga54bg277bf2ba156b" version="1">You must be a &lt;b&gt;&lt;i&gt;Sorcerer&lt;/i&gt;&lt;/b&gt; to equip this item.</content>
 </contentList>
-

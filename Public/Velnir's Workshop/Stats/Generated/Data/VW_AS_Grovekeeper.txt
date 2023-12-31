@@ -80,7 +80,7 @@ data "Description" "h86984a2cga24dg45abg9828gb19d78f46583;1"
 data "DescriptionParams" ""
 data "Properties" "Highlighted;DisplayBoostInTooltip"
 data "BoostContext" "OnEquip;OnCreate"
-data "Boosts" "Ability(Wisdom, 2, 22)Advantage(Skill,Nature)UnlockSpell(VW_Verdant_Renewal,,,UntilRest,Wisdom)"
+data "Boosts" "Ability(Wisdom, 2, 22);Advantage(Skill,Nature);UnlockSpell(VW_Verdant_Renewal,,,UntilRest,Wisdom)"
 
 
 

@@ -9,7 +9,7 @@
 					<attribute id="Duration" type="float" value="4" />
 					<attribute id="GMSoundCategory" type="int8" value="0" />
 					<attribute id="GMSubSection" type="LSString" value="" />
-					<attribute id="ID" type="FixedString" value="0dfecf8d-8e5b-4b08-8d17-e9ec2e370cab" />
+					<attribute id="ID" type="FixedString" value="c6557043-9b1b-4fb2-8a5b-5eccdd5d08e4" />
 					<attribute id="Internal" type="bool" value="True" />
 					<attribute id="Localized" type="bool" value="False" />
 					<attribute id="MaxDistance" type="float" value="50" />
@@ -20,7 +20,7 @@
 					<attribute id="SoundCodec" type="int8" value="7" />
 					<attribute id="SoundEvent" type="FixedString" value="VW_Action_Cast_Avada_Kedavra" />
 					<attribute id="SoundEventID" type="uint32" value="11111" />
-					<attribute id="SoundEventUUID" type="guid" value="731df1d2-216a-49a5-b358-85633ae00954" />
+					<attribute id="SoundEventUUID" type="guid" value="1cd60e00-b711-47ed-87ce-219db3208950" />
 					<attribute id="SourceFile" type="LSString" value="Public\Shared\Assets\Sound\VW_Avada_Kedavra.wav" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
 				</node>

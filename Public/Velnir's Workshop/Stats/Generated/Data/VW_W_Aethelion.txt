@@ -30,5 +30,3 @@ data "StackId" "VW_AETHELION_GLOW"
 data "StatusEffect" "6abda680-50c7-40af-8d37-2cc75fae7d21"
 
 
-
-

@@ -1597,12 +1597,12 @@
                     <attribute id="DisplayName" type="TranslatedString" handle="h95fa5136g51f9g458dgac16g0502793754a6" version="1" />
                     <attribute id="Icon" type="FixedString" value="Generated_ARM_Bracers_Metal_Githyanki" />
                     <attribute id="MapKey" type="FixedString" value="f011887c-3e9f-4a6a-85b9-4172add76f48" />
-                    <attribute id="Name" type="LSString" value="Velnir's Workshop_Alerias_Bracers_of_Arcane_Power" />
+                    <attribute id="Name" type="LSString" value="VW_Timeweaver_Alerias_Bracers" />
                     <attribute id="ParentTemplateId" type="FixedString" value="8d8c1761-d647-4cb6-8e3d-e1bf6d6c872d" />
 					<attribute id="PhysicsTemplate" type="FixedString" value="69660246-4a80-2163-0faf-30a2f43057f1" />
 					<attribute id="VisualTemplate" type="FixedString" value="78c010fc-c52e-aa07-01b2-62ae5d211077" />
 					<attribute id="WalkThrough" type="bool" value="True" />
-                    <attribute id="Stats" type="FixedString" value="Velnir's Workshop_Alerias_Bracers_of_Arcane_Power" />
+                    <attribute id="Stats" type="FixedString" value="VW_Timeweaver_Alerias_Bracers" />
                     <attribute id="Type" type="FixedString" value="item" />
                     <attribute id="_OriginalFileVersion_" type="int64" value="144115188075855912" />
                     <children>
@@ -1611,18 +1611,18 @@
                 </node>
 				<!-- End of Aleria's Bracers of Arcane Power-->
 
-				<!-- Robe of The Timelord-->
+				<!-- Robe of The Timeweaver-->
 				<node id="GameObjects"> 
 					<attribute id="Description" type="TranslatedString" handle="h1264ec47g39aag466fg892fg1adc1132a1b4" version="1" />
 					<attribute id="DisplayName" type="TranslatedString" handle="h6392bdd6gf697g48b5g86f0gda6fc80dfa41" version="2" />
 					<attribute id="MapKey" type="FixedString" value="c955b876-e2db-46cf-b640-833ed1565470" />
-					<attribute id="Name" type="LSString" value="VW_Robe_Timelord" />
+					<attribute id="Name" type="LSString" value="VW_Timeweaver_Robe" />
 					<attribute id="LevelName" type="FixedString" value="" />
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="ParentTemplateId" type="FixedString" value="168b9099-19f5-44e4-b55c-e64ceb60b71f" />
 					<attribute id="VisualTemplate" type="FixedString" value="f13d8fa8-590f-0958-4b61-a11a003c3dc1" />
 					<attribute id="Icon" type="FixedString" value="Generated_ARM_Robe_Selunite" />
-					<attribute id="Stats" type="FixedString" value="VW_Robe_Timelord" />
+					<attribute id="Stats" type="FixedString" value="VW_Timeweaver_Robe" />
 					<children> 
 						<node id="Tags"> 
 							<children> 
@@ -1913,9 +1913,41 @@
 						</node>
 					</children>
 				</node>  
-				<!-- End of Robe of the Timelord-->
+				<!-- End of Robe of the Timeweaver-->
 				
+				<!-- Timeweaver Boots-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h9d20ad70g8611g45b5gbf34g5984d6516f61" version="5" />
+					<attribute id="DisplayName" type="TranslatedString" handle="hb434fe16gd74bg4caag9676gefe043f7f2b4" version="2" />
+					<attribute id="Icon" type="FixedString" value="Item_EQ_ARM_NightWalkers" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="f70115f5-7342-43de-a170-6b05b5130c0b" />
+					<attribute id="Name" type="LSString" value="VW_Timeweaver_Boots" />
+					<attribute id="ParentTemplateId" type="FixedString" value="cda7838e-f619-4eea-913c-817ae3f2df09" />
+					<attribute id="Stats" type="FixedString" value="VW_Timeweaver_Boots" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+				</node>
+				<!-- End of Timeweaver Boots -->
 				
+				<!-- Timeweaver's Crown-->
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h41a04a38g3ed9g4868g8ae2ga7268031c3f0" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h2948402cgeb9bg4162ga7c7g25998311a544" version="2" />
+					<attribute id="Icon" type="FixedString" value="Generated_MAG_Shadow_SpellDCBonusWhileObscured_Circlet_Magic" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="aec32ec8-4719-4a5d-a1fb-c00007ce896d" />
+					<attribute id="Name" type="LSString" value="VW_Timeweaver_Crown" />
+					<attribute id="ParentTemplateId" type="FixedString" value="348b0f52-8960-43e0-ae38-c1d3b1974c3f" />
+					<attribute id="Stats" type="FixedString" value="VW_Timeweaver_Crown" />
+					<attribute id="TechnicalDescription" type="TranslatedString" handle="" version="0" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="bf79953e-0223-599e-cfe1-16bcbde0e558" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209030" />
+				
+				<!-- End of Timeweaver's Crown-->
+
+
 			</children>
 		</node>
 	</region>
