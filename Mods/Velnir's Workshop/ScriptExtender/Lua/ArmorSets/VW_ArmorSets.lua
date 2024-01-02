@@ -1,7 +1,6 @@
-local VAdd = {}
+VW_AS = {}
 
--- Define the armor sets and their bonuses in a configuration table
-local VW_ArmorSets = {
+VW_AS.VW_ArmorSets = {
     {
         Name = "Lightbringer",
         Slots = {
@@ -61,9 +60,8 @@ local VW_ArmorSets = {
 
 }
 
-
-local function VW_SetCheck(VW_character)
-    for _, armorSet in ipairs(VW_ArmorSets) do
+function VW_AS.VW_SetCheck(VW_character)
+    for _, armorSet in ipairs(VW_AS.VW_ArmorSets) do
         local allSlotsEmpty = true
         for _, slot in ipairs(armorSet.Slots) do
             local equippedItem = Osi.GetEquippedItem(VW_character, slot.Slot)
@@ -83,14 +81,14 @@ local function VW_SetCheck(VW_character)
         end
     end
 end
-VAdd["VW_SetCheck"] = VW_SetCheck
 
 
-local function VW_SetBonus(VW_character)
+
+function VW_AS.VW_SetBonus(VW_character)
     local activeSet = nil
     local setCounter = 0
-    
-    for _, armorSet in ipairs(VW_ArmorSets) do
+
+    for _, armorSet in ipairs(VW_AS.VW_ArmorSets) do
         local currentSetCounter = 0
 
         for _, slot in ipairs(armorSet.Slots) do
@@ -103,6 +101,10 @@ local function VW_SetBonus(VW_character)
             activeSet = armorSet
             setCounter = currentSetCounter
         end
+    end
+
+    if activeSet == nil then
+        return
     end
 
     for _, status in ipairs(activeSet.SetBonuses) do
@@ -126,19 +128,18 @@ local function VW_SetBonus(VW_character)
         end
     end
 end
-VAdd["VW_SetBonus"] = VW_SetBonus
 
 
-return VAdd
+Ext.Osiris.RegisterListener("TemplateEquipped", 2, "after", function(_, VW_char)
+    VW_AS.VW_SetCheck(VW_char)
+    VW_AS.VW_SetBonus(VW_char)
+end)
+
+Ext.Osiris.RegisterListener("TemplateUnequipped", 2, "after", function(_, VW_char)
+    VW_AS.VW_SetCheck(VW_char)
+    VW_AS.VW_SetBonus(VW_char)
+end)
 
 
-
-
-
-
-
-
-
-
-
+Ext.Events.GameStateChanged:Subscribe(VWLib.GetTeamMembers) 
 

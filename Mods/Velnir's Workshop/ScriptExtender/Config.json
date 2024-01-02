@@ -1,6 +1,6 @@
 {
     "RequiredVersion": 12,
-    "ModTable": "V_Workshop",
+    "ModTable": "Velnirs_Workshop",
     "FeatureFlags": [
         "Osiris",
         "Lua"

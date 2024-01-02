@@ -29,10 +29,10 @@
                        </node>
                        <node id="ModuleShortDesc">
                            <attribute id="Folder" type="LSString" value="VFX_Library_SHV"/>
-                           <attribute id="MD5" type="LSString" value=""/>
+                           <attribute id="MD5" type="LSString" value="d6577c5e949ce0e07f24b056724ab1ac"/>
                            <attribute id="Name" type="LSString" value="VFX_Library_SHV"/>
                            <attribute id="UUID" type="FixedString" value="dd19db12-96c0-4bca-9ef6-e8d733801d23"/>
-                           <attribute id="Version64" type="int64" value="36169534507319296"/>
+                           <attribute id="Version64" type="int64" value="36310271995674624"/>
                        </node>
                    </children>
         </node>
