@@ -138,7 +138,10 @@ function VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster, VW_spell)
 end
 
 
-
+---Checks whether the character has shapeshifted into one of the supported wildshape forms and if he has all equipped pieces 
+---of the Grovekeeper set then it allows the transformed character to keep his Equipment bonuses
+---@param VW_char string|number
+---@param VW_ss_status string
 function VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
     local VW_active_bonus = Osi.HasActiveStatus(VW_char,VW_AS.VW_ArmorSets[3].SetBonuses[3]) 
     local speciesName = string.match(VW_ss_status, "WILDSHAPE_(%w+_?%w*)_PLAYER")

@@ -67,7 +67,6 @@ end)
 Ext.Events.DoConsoleCommand:Subscribe(function(e)
     if e.Command == "LoadStats" then
         for _, file in pairs {
-            "VW_A_Alerias.txt",
             "VW_Arcane_Bolt.txt",
             "VW_AS_Deathstalker.txt",
             "VW_AS_Grovekeeper.txt",
@@ -83,3 +82,4 @@ Ext.Events.DoConsoleCommand:Subscribe(function(e)
         end
     end
 end)
+

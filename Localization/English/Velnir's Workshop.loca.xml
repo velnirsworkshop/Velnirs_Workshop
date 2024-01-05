@@ -50,8 +50,11 @@
 	<!-- Groovekeeper Jacket -->
 	<content contentuid="h5383d722ge977g459eg901dg571a3f0c8582" version="1">Grovekeeper's Jacket</content>
 	<content contentuid="h35a2a68fgfe1ag4774g8f71gea6b9b84e32e" version="1">A verdant green jacket woven from enchanted vines and leaves. It emits a faint aroma of the forest and seems to pulse with the energy of nature.</content>
+	<content contentuid="h44eedcbcgc455g4cc0gba75g1f0b05838746" version="1">Living Armor</content>
+	<content contentuid="hf95efb1eg87e5g4ec1ga77bgbb7e7ea9a46f" version="1">While shapeshifted the armor melds with you enhancing your defensive capabilities. Your &lt;LSTag Tooltip="ArmourClass"&gt;AC&lt;/LSTag&gt; becomes 18.
+	In Addition you become &lt;LSTag Tooltip="Resistance"&gt;Resistant&lt;/LSTag&gt; to Bludgeoning, Slashing, and Piercing damage from Weapons.</content>
 	<content contentuid="h72f7c78dg803fg46d6g8524ga1aae9da68e1" version="1">Chosen of Silvanus</content>
-	<content contentuid="ha1dbce5bgc8d8g4927gaa80g47bf8b097519" version="1">You were to be the Avatar of Silvanus to protect and keep the balance of nature in check. &lt;br&gt;
+	<content contentuid="ha1dbce5bgc8d8g4927gaa80g47bf8b097519" version="1">You were chosen to be the Avatar of Silvanus to protect and keep the balance of nature in check. &lt;br&gt;
 	Your wildshape now benefits from all equipped items and their effects.</content>
 	<!-- Groovekeeper Circlet -->
 	<content contentuid="hc65b9ef9g6764g43e2ga061g7e7f57eb7da2" version="1">Grovekeeper's Circlet</content>
@@ -67,6 +70,8 @@
 	<!-- Groovekeeper Gloves -->
 	<content contentuid="heb142715g6622g4a87gacbag3498aeefacc0" version="1">Grovekeeper's Gloves</content>
 	<content contentuid="h2569e487gae18g4adfgafcfgcaed052e1e5b" version="1">Gloves made from supple leather and adorned with small runes resembling leaves. They offer both protection and a closer attunement to the druid's abilities.</content>
+	<content contentuid="hd7f53cc0g1a47g4512ga35cg2885eaef2116" version="1">Superior Natural Weapons</content>
+	<content contentuid="hfdaf6897gbe57g4e91gbb6ag53b93b2242c2" version="1">While Shapeshifted your natural weapon attacks are enhanced by an additional [1] damage.</content>
 	<content contentuid="h92bc3563gf7e5g411bgb88bgc8c1863d134c" version="1">Nature's Grace</content>
 	<content contentuid="hf63c7634gf46eg45a2gac2eg98a27d5b5c28" version="1">Wherever you successfully heal someone they gain &lt;LSTag Type="Status" Tooltip="VW_NATURES_BLOOM"&gt;Nature's Bloom&lt;/LSTag&gt; effect for [1] turns.</content>
 	<content contentuid="heb20c5b8g030ag45cdgbe4bg54a79c64323a" version="1">Nature's Bloom</content>
@@ -91,7 +96,6 @@
 	<content contentuid="hd7846674g6bb2g40a0g9f43gae138da90c41" version="1">DeathStalker's Cuirass</content> 
 	<content contentuid="h224b777cgb906g4fa8gb3c1gef228c8170e2" version="1">A shadow-infused chestplate that melds seamlessly with the rogue's movements, providing both protection and stealth. The cuirass is adorned with dark symbols that seem to pulse with a mysterious energy.&lt;br&gt;
 	Deathstalker Set Bonus: &lt;br&gt; 
-	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_0"&gt;Deathstalker Set Bonus 0/4&lt;/LSTag&gt; &lt;br&gt;
 	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_2"&gt;Deathstalker Set Bonus 2/4&lt;/LSTag&gt; &lt;br&gt;
 	&lt;LSTag Type="Status" Tooltip="VW_DEATHSTALKER_SET_BONUS_4"&gt;Deathstalker Set Bonus 4/4&lt;/LSTag&gt; &lt;br&gt;
 	Only Equippable by a &lt;b&gt;&lt;i&gt;Rogue.&lt;/i&gt;&lt;/b&gt;
@@ -132,7 +136,7 @@
 	<content contentuid="h4f0f95a2g1baeg4a85g922bg864df58ccc78" version="1">Lightbringer Set Bonus 4/4: When all Lightbringer Pieces are equipped the wearer gains the following bonuses: &lt;LSTag Type="Status" Tooltip="VW_BLESSING_OF_LIGHT"&gt;Blessing of Light&lt;/LSTag&gt; , the &lt;LSTag Type="Status" Tooltip="VW_LIGHTWARDEN"&gt;Lightwarden&lt;/LSTag&gt; and the &lt;LSTag Type="Spell" Tooltip="VW_Avatar_Of_Light"&gt;Avatar of Light&lt;/LSTag&gt; spell.</content>
 	<content contentuid="h82bcb3a5g0041g4b07gb206g58a7472101ef" version="2">Blessing of Light</content>
 	<content contentuid="h889ef45ag02d3g4d73gac7dg2a425b85cfd0" version="1">The paladin and any nearby allies in [1] ft radius regain the maximum &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; possible when healed.</content>
-	<content contentuid="hb9de9a11g0f97g4ac1ga1e0gcd72d3a710d7" version="2">Blessing of Light</content>
+	<content contentuid="hb9de9a11g0f97g4ac1ga1e0gcd72d3a710d7" version="2">Blessing of Light Aura</content>
 	<content contentuid="h7b3be30bg93a3g479ega759gd72355ba120e" version="1">The paladin and any nearby allies in [1] ft radius regain the maximum &lt;LSTag Tooltip="HitPoints"&gt;hit points&lt;/LSTag&gt; possible when healed.</content>
 	<content contentuid="hcbdcebd9ga86cg4551g9cf5gb0980964683d" version="2">Avatar Of Light</content>
 	<content contentuid="h9edfba80g578ag4da5gbe34g71692520001f" version="2">You Become an Avatar of Light Healing yourself for [1] and your allies within [2] for [1] and then [1] each turn for [3] turns.
@@ -147,7 +151,6 @@
 	<content contentuid="h5a295668g3d3ag4e88gaaf2gb7f1819febe7" version="1">Lightbringer Breastplate</content>
 	<content contentuid="h165305aagab6eg433fg807cg680e8ccb52cc" version="1">Lightbringer's armor pieces gain power if you equip them as a set.  
 	Lightbringer Set Bonus:  
-	&lt;LSTag Type="Status" Tooltip="VW_LIGHTBRINGER_SET_BONUS_0"&gt;Lightbringer Set Bonus 0/4&lt;/LSTag&gt; 
 	&lt;LSTag Type="Status" Tooltip="VW_LIGHTBRINGER_SET_BONUS_2"&gt;Lightbringer Set Bonus 2/4&lt;/LSTag&gt; 
 	&lt;LSTag Type="Status" Tooltip="VW_LIGHTBRINGER_SET_BONUS_4"&gt;Lightbringer Set Bonus 4/4&lt;/LSTag&gt; 
 	Only Equippable by a &lt;b&gt;&lt;i&gt;Paladin.&lt;/i&gt;&lt;/b&gt;

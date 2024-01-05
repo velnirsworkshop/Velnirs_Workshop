@@ -60,6 +60,8 @@ VW_AS.VW_ArmorSets = {
 
 }
 
+--- Checks for the Character that equipped or unequipped an item how many item of the corresponding set are equipped
+--- @param VW_character string|number
 function VW_AS.VW_SetCheck(VW_character)
     for _, armorSet in ipairs(VW_AS.VW_ArmorSets) do
         local allSlotsEmpty = true
@@ -83,7 +85,8 @@ function VW_AS.VW_SetCheck(VW_character)
 end
 
 
-
+--- Checks for the Character that equipped or unequipped an item what Set Bonus Status to apply based on the number of equipped pieces.
+--- @param VW_character string|number
 function VW_AS.VW_SetBonus(VW_character)
     local activeSet = nil
     local setCounter = 0
@@ -129,17 +132,13 @@ function VW_AS.VW_SetBonus(VW_character)
     end
 end
 
-
 Ext.Osiris.RegisterListener("TemplateEquipped", 2, "after", function(_, VW_char)
-    VW_AS.VW_SetCheck(VW_char)
     VW_AS.VW_SetBonus(VW_char)
 end)
 
 Ext.Osiris.RegisterListener("TemplateUnequipped", 2, "after", function(_, VW_char)
-    VW_AS.VW_SetCheck(VW_char)
     VW_AS.VW_SetBonus(VW_char)
 end)
 
 
-Ext.Events.GameStateChanged:Subscribe(VWLib.GetTeamMembers) 
 
