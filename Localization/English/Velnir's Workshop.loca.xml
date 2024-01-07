@@ -9,24 +9,23 @@
 	<content contentuid="hac94edd2gd3c2g4ecega436g9184e12ecd13" version="1">Timeweaver's Set Bonus 4/4: There are no bonuses</content>
 
 	<!--  Robe of the Timelord-->
-	<content contentuid="h6392bdd6gf697g48b5g86f0gda6fc80dfa41" version="1">Robe of the Timelord</content>
+	<content contentuid="h6392bdd6gf697g48b5g86f0gda6fc80dfa41" version="1">Velen's Robe</content>
 	<content contentuid="h1264ec47g39aag466fg892fg1adc1132a1b4" version="1">This exquisite robe, woven from ethereal strands that shimmer with a celestial glow, bears the unmistakable mark of Velen Lightsbane. 
 	Robe of the Timelord are a manifestation of the god's mastery over time itself. The fabric seems to dance with an otherworldly energy, and constellations subtly shift across its surface.</content>  
 
 	<!-- Aleria's Bracers -->
-	<content contentuid="h95fa5136g51f9g458dgac16g0502793754a6" version="1">Aleria's Bracers of Arcane Power</content>
+	<content contentuid="h95fa5136g51f9g458dgac16g0502793754a6" version="1">Aleria's Bracers</content>
 	<content contentuid="hfbde6664g300bg481ag9206gbf58d292b3ca" version="1">Bracers of Aleria Windrunner , mother of Velen and Lorenala , High Sorceress of Elendia. These Bracers are the epitome of her Mastery of the Weave.</content>
 	<!--  Aleria's Blessing-->
 	<content contentuid="hcaf95ecbg917bg42fegbfcbg2ecbeab40409" version="1">Aleria's Blessing</content>
 	<content contentuid="h285f579cg5da7g4365gabb4gd15ad7a1576e" version="1">Empowered by Aleria's Blessing giving you deeper access to your inner power and grants you the power to tap into the weave to gain +[1] &lt;LSTag Tooltip="Sorcery Points"&gt;Max Sorcery Points&lt;/LSTag&gt;.</content>
 	<!-- Aleria's Weave Mastery-->
 	<content contentuid="hcfd66fbege278g41b3g9b05g832eb195f1c9" version="2">Aleria's Weave Mastery</content>
-	<content contentuid="hbf379b4eg750cg4a49gb834g70dc2fa100f9" version="2">You gain a +[1] bonus to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; as long as you are not wearing armour or holding a shield. &lt;br&gt;
-	In addition you gain +[1] &lt;LSTag Tooltip="Sorcery Points"&gt;Max Sorcery Points&lt;/LSTag&gt;.</content>
+	<content contentuid="hbf379b4eg750cg4a49gb834g70dc2fa100f9" version="2">You gain a +[1] bonus to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; as long as you are not wearing armour or holding a shield.</content>
 	<!-- End of Aleria's Bracers -->
 
 	<!-- Timelord's Boots-->
-	<content contentuid="hb434fe16gd74bg4caag9676gefe043f7f2b4" version="1">Timelord's Boots</content>
+	<content contentuid="hb434fe16gd74bg4caag9676gefe043f7f2b4" version="1">Velen's Boots</content>
 	<content contentuid="h9d20ad70g8611g45b5gbf34g5984d6516f61" version="1">Boots adorned with arcane symbols that seem to ripple with temporal energy. The leather is imbued with threads of magic that dance with the ebb and flow of time.</content>
 	<content contentuid="ha297c391g984fg4c76gb22bg800707405baf" version="1">Time stands Still</content>
 	<content contentuid="hfdafbe87g3d6eg4d5ega159gb3508bd6146e" version="1">TBD</content>
@@ -36,7 +35,7 @@
 	<content contentuid="h184749dagd8b8g4ac0gad49g71e0a6f8b2a2" version="1">TBD</content>
 
 	<!-- Timelord's Crown-->
-	<content contentuid="h2948402cgeb9bg4162ga7c7g25998311a544" version="1">Timelord's Crown</content>
+	<content contentuid="h2948402cgeb9bg4162ga7c7g25998311a544" version="1">Velen's Crown</content>
 	<content contentuid="h41a04a38g3ed9g4868g8ae2ga7268031c3f0" version="1">A regal crown adorned with a central gem that captures the essence of a swirling cosmic nebula. The diadem hums with the power to manipulate time and space.</content>
 	<content contentuid="h9fab00d2g08c7g406agbea9g163a86b65767" version="1">Echoes of Time</content>
 	<content contentuid="h4f0b4d63g5afbg4e3dg8c63gc6d0caa119da" version="1">TBD</content>

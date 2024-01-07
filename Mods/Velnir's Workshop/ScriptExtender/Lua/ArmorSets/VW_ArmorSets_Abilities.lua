@@ -1,3 +1,7 @@
+Ext.Require("_init.lua")
+Ext.Require("Globals.lua")
+Ext.Require("VW_ArmorSets.lua")
+
 VW_AS_ABILITIES = {}
 
 local VW_TSS_Status = {
@@ -130,27 +134,39 @@ local VW_TSS_Status = {
     },
 }
 
-
-function VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster, VW_spell)
-    local cur_x
-    local cur_y
-    local cur_z
+function VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y,VW_z,VW_hp)
+    --print("Caster:",VW_caster,"X:",VW_x,"Y:",VW_y,"Z:",VW_z,"HP:",VW_hp)
+    Osi.TeleportToPosition(VW_caster, VW_x, VW_y, VW_z)
+    Osi.SetHitpointsPercentage(VW_caster,VW_hp)
 end
 
 
----Checks whether the character has shapeshifted into one of the supported wildshape forms and if he has all equipped pieces 
+function VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster,cur_x,cur_y,cur_z,cur_HP)
+    --print(VW_caster)
+    cur_x, cur_y, cur_z = Osi.GetPosition(VW_caster)
+    --print("X:", cur_x, "Y:", cur_y, "Z:", cur_z)
+    cur_HP = Osi.GetHitpoints(VW_caster)
+    --print("HP:", cur_HP)
+    --VW_Globals.ValidSlots = VW_AS_ABILITIES.LoadSpellSlotsGroupToArray(VW_Globals.ValidSlots, VW_Conditions.IsResourceNotStunted)
+    --print (CLGlobals.ValidSlots)
+    --local slotTable = CLUtils.FilterEntityResources(VW_Globals.ValidSlots, VW_caster.ActionResources.Resources)
+    --print(slotTable)
+    return cur_x,cur_y,cur_z,cur_HP
+end
+
+---Checks whether the character has shapeshifted into one of the supported wildshape forms and if he has all equipped pieces
 ---of the Grovekeeper set then it allows the transformed character to keep his Equipment bonuses
 ---@param VW_char string|number
 ---@param VW_ss_status string
 function VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
-    local VW_active_bonus = Osi.HasActiveStatus(VW_char,VW_AS.VW_ArmorSets[3].SetBonuses[3]) 
+    local VW_active_bonus = Osi.HasActiveStatus(VW_char, VW_AS.VW_ArmorSets[3].SetBonuses[3])
     local speciesName = string.match(VW_ss_status, "WILDSHAPE_(%w+_?%w*)_PLAYER")
     if speciesName and VW_active_bonus then
         for _, species in pairs(VW_TSS_Status) do
             if species.Name == speciesName then
                 for _, status in pairs(species.Flags) do
                     if VW_ss_status == status.active then
-                        Osi.ApplyStatus(VW_char, status.setactive, -1, -1) 
+                        Osi.ApplyStatus(VW_char, status.setactive, -1, -1)
                         return
                     end
                 end
@@ -160,8 +176,25 @@ function VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
     end
 end
 
-Ext.Osiris.RegisterListener("ShapeshiftChanged",4,"after",function(VW_char,_,_,VW_ss_status)
+
+
+Ext.Osiris.RegisterListener("ShapeshiftChanged", 4, "after", function(VW_char, _, _, VW_ss_status)
     VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
-    
+end)
+
+Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(VW_caster, VW_spell, _, _)
+    --print(VW_spell)
+    --print(VW_caster)
+    if VW_spell == "VW_Chronoshift" then
+        VW_x,VW_y,VW_z,VW_hp = VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster,VW_x,VW_y,VW_z,VW_hp)
+        --print("X:", VW_x, "Y:", VW_y, "Z:", VW_z)
+        --print("HP:", VW_hp)
+    end
+end)
+
+Ext.Osiris.RegisterListener("CastSpell",5,"before",function(VW_caster,VW_spell,_,_,_)
+    if Osi.HasActiveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK") and VW_spell == "VW_Chronoshift_Recall" then
+        VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster,VW_x,VW_y,VW_z,VW_hp)
+    end
 end)
 

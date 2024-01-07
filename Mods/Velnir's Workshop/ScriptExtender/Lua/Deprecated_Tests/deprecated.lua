@@ -77,9 +77,41 @@ Ext.Events.DoConsoleCommand:Subscribe(function(e)
             "VW_W_Aethelion.txt",
             "VW_W_Mpekatsoksulo.txt",
         } do
-          Ext.Stats.LoadStatsFile("Public/Velnir's Workshop/Stats/Generated/Data/"..file,1)
+          ---@diagnostic disable-next-line: undefined-field
+          Ext.Stats.LoadStatsFile("Public/Velnir's Workshop/Stats/Generated/Data/"..file)
             
         end
     end
 end)
+--[[
+---Change the visual of any item courtesy of Focus. Find him here --- https://www.nexusmods.com/users/21094599 ---
+---@param item any
+---@param appearance any
+
+function Helpers.Appearance:SetItemAppearance(item, appearance)
+    local entity = Helpers.Object:GetItem(item)
+    if entity ~= nil then
+        local appearanceUUID = Ext.Template.GetTemplate(appearance) ~= nil and appearance
+        if not appearanceUUID then
+            local appearanceEntity = Helpers.Object:GetItem(appearance)
+            if appearanceEntity ~= nil then
+                appearanceUUID = appearanceEntity.GameObjectVisual.RootTemplateId
+            end
+        end
+        if appearanceUUID then
+            self.CurrentAppearances[entity.Uuid.EntityUuid] = appearanceUUID
+            entity:Replicate("GameObjectVisual")
+            Osi.RemoveTransforms(entity.Uuid.EntityUuid)
+            Events.Entity.GameObjectVisual:Subscribe(function(e)
+                if self.CurrentAppearances[entity.Uuid.EntityUuid] == appearanceUUID then
+                    e.Visual.RootTemplateId = appearanceUUID
+                else
+                    e:Unsubscribe()
+                end
+            end, {Entity = entity})
+        end
+    end
+end
+]]--
+
 

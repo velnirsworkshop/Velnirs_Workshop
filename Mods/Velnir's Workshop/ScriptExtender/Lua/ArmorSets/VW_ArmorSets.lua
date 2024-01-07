@@ -1,5 +1,4 @@
 VW_AS = {}
-
 VW_AS.VW_ArmorSets = {
     {
         Name = "Lightbringer",
@@ -84,7 +83,6 @@ function VW_AS.VW_SetCheck(VW_character)
     end
 end
 
-
 --- Checks for the Character that equipped or unequipped an item what Set Bonus Status to apply based on the number of equipped pieces.
 --- @param VW_character string|number
 function VW_AS.VW_SetBonus(VW_character)
@@ -132,13 +130,7 @@ function VW_AS.VW_SetBonus(VW_character)
     end
 end
 
-Ext.Osiris.RegisterListener("TemplateEquipped", 2, "after", function(_, VW_char)
-    VW_AS.VW_SetBonus(VW_char)
-end)
 
-Ext.Osiris.RegisterListener("TemplateUnequipped", 2, "after", function(_, VW_char)
-    VW_AS.VW_SetBonus(VW_char)
-end)
 
 
 

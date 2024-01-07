@@ -1,10 +1,14 @@
 
 new treasuretable "TUT_Chest_Potions"
 CanMerge 1
+new subtable "1,1"
+object category "I_VW_Timeweaver_Alerias_Bracers",1,0,0,0,0,0,0,0
 new subtable "-1"
-object category "I_Velnir's Workshop_Alerias_Bracers_of_Arcane_Power",1,0,0,0,0,0,0,0
+object category "I_VW_Timeweaver_Robe",1,0,0,0,0,0,0,0
 new subtable "-1"
-object category "I_VW_Robe_Timelord",1,0,0,0,0,0,0,0
+object category "I_VW_Timeweaver_Crown",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_VW_Timeweaver_Boots",1,0,0,0,0,0,0,0
 new subtable "-1"
 object category "I_VW_Aethelion",1,0,0,0,0,0,0,0
 new subtable "-1"

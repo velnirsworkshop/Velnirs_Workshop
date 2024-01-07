@@ -221,7 +221,7 @@ data "Boosts" "IF(HasStatus('SG_Polymorph_BeastShape', context.Source)and IsCrit
 new entry "VW_LARMOR"
 type "StatusData"
 data "StatusType" "BOOST"
-data "Boosts" "ACOverrideFormula(18);Resistance(WeaponDamageResistance(Bludgeoning);WeaponDamageResistance(Slashing);WeaponDamageResistance(Piercing))"
+data "Boosts" "ACOverrideFormula(18,false);WeaponDamageResistance(Bludgeoning);WeaponDamageResistance(Slashing);WeaponDamageResistance(Piercing)"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "StatusGroups" "SG_RemoveOnRespec"
 

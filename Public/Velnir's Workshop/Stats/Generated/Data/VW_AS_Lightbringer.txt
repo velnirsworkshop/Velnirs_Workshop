@@ -68,7 +68,7 @@ data "Description" "h08cc2d20g3482g453bg986cg54c4bb7ba530;1"
 data "DescriptionParams" "DealDamage(1d8, Radiant)"
 data "Properties" "Highlighted"
 data "BoostContext" "OnEquip;OnCreate"
-data "Boosts" "CharacterWeaponDamage(1d8, Radiant)"
+data "Boosts" "CharacterWeaponDamage(1d8,Radiant)"
 
 new entry "VW_PLightbringer_Greaves"
 type "PassiveData"
@@ -155,8 +155,6 @@ data "DisplayName" "h8ac79174g6a67g4672gb4abgc9ffe3e469a7;1"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnLongRest;OnCreate"
 data "StatsFunctors" "IF(context.HasContextFlag(StatsFunctorContext.OnLongRest)):ApplyStatus(VW_DIVINE_HALO_RESURRECT_RESOURCE, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnCreate) and HasStatus('VW_DIVINE_HALO_TRACKER', GetItemInEquipmentSlot(EquipmentSlot.Helmet, context.Target)) and not HasStatus('VW_DIVINE_HALO_RESURRECT_RESOURCE_DEPLETED', GetItemInEquipmentSlot(EquipmentSlot.Helmet, context.Target))):ApplyStatus(VW_DIVINE_HALO_RESURRECT_RESOURCE, 100, -1);IF(context.HasContextFlag(StatsFunctorContext.OnCreate) and HasStatus('VW_DIVINE_HALO_TRACKER', GetItemInEquipmentSlot(EquipmentSlot.Helmet, context.Target)) and not HasStatus('VW_DIVINE_HALO_RESURRECT_RESOURCE_DEPLETED', GetItemInEquipmentSlot(EquipmentSlot.Helmet, context.Target))):ApplyStatus(VW_DIVINE_HALO_RESURRECT_RESOURCE, 100, -1)"
-
-
 
 new entry "VW_LIGHTBRINGER_SET_BONUS_0"
 type "StatusData"
@@ -248,7 +246,6 @@ data "TickFunctors" "RegainHitPoints(1d8+Cause.CharismaModifier+ProficiencyBonus
 data "OnApplyFunctors" "RegainHitPoints(1d8+Cause.CharismaModifier+ProficiencyBonus);ApplyStatus(VW_STATUS_AOL_RESISTANCE,100, 4);"
 data "StatusGroups" "SG_RemoveOnRespec"
 
-
 new entry "VW_STATUS_AOL_RESISTANCE"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -283,6 +280,13 @@ data "HitAnimationType" "MagicalNonDamage"
 data "PrepareEffect" "9a056bd7-3c73-4cf6-94c5-13ecc9952a77"
 data "CastEffect" "559f907f-c8fd-49ae-87ad-90e89f060e73"
 data "TargetEffect" "d005f744-7c9b-4e48-bbab-822020b826fc"
+
+new entry "VW_Lightbringer_Fly_Wings"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Fly_Deva"
+data "PrepareEffect" "3a941a0f-ec18-47b8-9bce-1bcc0575faa4"
+data "CastEffect" "77b35384-0ccd-454b-b38c-66ca362d3309"
 
 
 

@@ -38,7 +38,7 @@ data "PrepareEffect" "fdbf8e88-93dd-4cff-a016-24187a025700"
 data "CastEffect" "28a8039d-2c7f-403b-a265-460dd494da74"
 data "TargetEffect" "a3e2368b-48c5-52e2-4738-8b7536d18b73"
 data "PositionEffect" "de5e4e60-c07f-4f40-9332-5a137337c134"
-data "DamageType" "Radiant;Lightning"
+data "DamageType" "Radiant"
 data "PowerLevel" "2"
 
 new entry "VW_Projectile_ST_Spear_3"

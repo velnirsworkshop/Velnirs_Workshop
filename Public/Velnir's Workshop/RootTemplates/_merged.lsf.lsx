@@ -5,6 +5,7 @@
 		<node id="Templates">
 			<children>
 
+
 				<!-- Grovekeeper's Jacket-->
 				<node id="GameObjects">
 					<attribute id="Description" type="TranslatedString" handle="h35a2a68fgfe1ag4774g8f71gea6b9b84e32e" version="7" />
@@ -1944,10 +1945,8 @@
 					<attribute id="Type" type="FixedString" value="item" />
 					<attribute id="VisualTemplate" type="FixedString" value="bf79953e-0223-599e-cfe1-16bcbde0e558" />
 					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209030" />
-				
+				</node>
 				<!-- End of Timeweaver's Crown-->
-
-
 			</children>
 		</node>
 	</region>
