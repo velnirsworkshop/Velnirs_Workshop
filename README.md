@@ -55,7 +55,7 @@ I hope you can enjoy this mod as much as I do testing and playing it. All this m
 
 ### 1. Creative Content:
 
-All creative content ideas, including but not limited to classes, weapons, armors, and items, is **not** covered by this license.
+All creative content ideas, including but not limited to classes, weapons, armors, and items, is **not** covered by a license.
 ### **All rights reserved**.
 
 ### 2. Scripting and Coding:
