@@ -62,3 +62,11 @@ All creative content ideas, including but not limited to classes, weapons, armor
 
 The scripting, coding, and any coding/scripting parts of the mod that utilizes [Script Extender by Norbyte](https://github.com/Norbyte/bg3se) or [Larian Studios](https://larian.com/) are each respectively under their use permission licenses.
 [Script Extender's LICENSE](https://github.com/Norbyte/bg3se/blob/main/LICENSE)
+
+# Acknowledgments
+Larian Software, for working on Baldur's Gate 3 and bringing 5th Edition to PC. <br>
+The Baldur's Gate 3 Modding Community. <br>
+WoTC for Dungeons and Dragons <br>
+https://github.com/ShinyHobo for their work easing the process of creating .pak files. <br>
+Norbyte for the Script Extender allowing the modding community to do crazy stuff <br>
+
