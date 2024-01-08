@@ -28,11 +28,12 @@
 	<content contentuid="hb434fe16gd74bg4caag9676gefe043f7f2b4" version="1">Velen's Boots</content>
 	<content contentuid="h9d20ad70g8611g45b5gbf34g5984d6516f61" version="1">Boots adorned with arcane symbols that seem to ripple with temporal energy. The leather is imbued with threads of magic that dance with the ebb and flow of time.</content>
 	<content contentuid="ha297c391g984fg4c76gb22bg800707405baf" version="1">Time stands Still</content>
-	<content contentuid="hfdafbe87g3d6eg4d5ega159gb3508bd6146e" version="1">TBD</content>
+	<content contentuid="hfdafbe87g3d6eg4d5ega159gb3508bd6146e" version="1">Your mastery over time and space allows you to move faster gaining +[1] &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
 	<content contentuid="h11bba147gce88g42bfgbb3cg4f00428746c2" version="1">Chronoshift</content>
-	<content contentuid="h1f719696g486eg4be8g86eag155bee497345" version="1">TBD</content>
+	<content contentuid="h1f719696g486eg4be8g86eag155bee497345" version="1">You lock yourself in time at the moment of casting and then teleport up to [1] away.
+	For a duration of 3 rounds you may cast &lt;LSTag Type="Spell" Tooltip="VW_Chronoshift_Recall"&gt;Chronoshift Recall&lt;/LSTag&gt; to return to that fixed point in time you created exactly as you were in the time of casting.</content>
 	<content contentuid="hec932ec1gc3afg4af3g8741g1468f7812b7d" version="1">Chronoshift Recall</content>
-	<content contentuid="h184749dagd8b8g4ac0gad49g71e0a6f8b2a2" version="1">TBD</content>
+	<content contentuid="h184749dagd8b8g4ac0gad49g71e0a6f8b2a2" version="1">Return to the place you were upon casting &lt;LSTag Type="Spell" Tooltip="VW_Chronoshift"&gt;Chronoshift&lt;/LSTag&gt; reversing any Hitpoints, SpellSlots and Statuses you lost while the duration lasts. </content>
 
 	<!-- Timelord's Crown-->
 	<content contentuid="h2948402cgeb9bg4162ga7c7g25998311a544" version="1">Velen's Crown</content>

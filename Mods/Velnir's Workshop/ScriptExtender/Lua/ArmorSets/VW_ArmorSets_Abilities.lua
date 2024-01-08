@@ -1,7 +1,3 @@
-Ext.Require("_init.lua")
-Ext.Require("Globals.lua")
-Ext.Require("VW_ArmorSets.lua")
-
 VW_AS_ABILITIES = {}
 
 local VW_TSS_Status = {
@@ -134,24 +130,43 @@ local VW_TSS_Status = {
     },
 }
 
-function VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y,VW_z,VW_hp)
-    --print("Caster:",VW_caster,"X:",VW_x,"Y:",VW_y,"Z:",VW_z,"HP:",VW_hp)
+function VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_prev_statusTable,VW_prev_slotTable)
     Osi.TeleportToPosition(VW_caster, VW_x, VW_y, VW_z)
-    Osi.SetHitpointsPercentage(VW_caster,VW_hp)
+    Osi.SetHitpointsPercentage(VW_caster, VW_hp)
+    VW_AS_ABILITIES.VW_ChronoshiftCompare(VW_caster, VW_prev_statusTable, VW_prev_slotTable)
 end
 
 
-function VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster,cur_x,cur_y,cur_z,cur_HP)
-    --print(VW_caster)
-    cur_x, cur_y, cur_z = Osi.GetPosition(VW_caster)
-    --print("X:", cur_x, "Y:", cur_y, "Z:", cur_z)
-    cur_HP = Osi.GetHitpoints(VW_caster)
-    --print("HP:", cur_HP)
-    --VW_Globals.ValidSlots = VW_AS_ABILITIES.LoadSpellSlotsGroupToArray(VW_Globals.ValidSlots, VW_Conditions.IsResourceNotStunted)
-    --print (CLGlobals.ValidSlots)
-    --local slotTable = CLUtils.FilterEntityResources(VW_Globals.ValidSlots, VW_caster.ActionResources.Resources)
-    --print(slotTable)
-    return cur_x,cur_y,cur_z,cur_HP
+function VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
+    VW_x, VW_y, VW_z = Osi.GetPosition(VW_caster)
+    VW_hp = Osi.GetHitpoints(VW_caster)
+    VW_status = {}
+    local VW_entity = VWLib.RetrieveEntity(VW_caster)
+    local VW_prev_statusTable = VWLib.GetStatusDetails(VW_entity)
+    _D(VW_prev_statusTable)
+    local VW_prev_slotTable = VWLib.GetSpellSlotDetails(VW_entity)
+    _D(VW_prev_slotTable)
+    
+    return VW_x, VW_y, VW_z, VW_hp, VW_status, VW_prev_statusTable,VW_prev_slotTable
+end
+
+function VW_AS_ABILITIES.VW_ChronoshiftCompare(VW_caster, VW_prev_statusTable, VW_prev_slotTable)
+    local VW_entity = VWLib.RetrieveEntity(VW_caster)
+    local VW_cur_statusTable = VWLib.GetStatusDetails(VW_entity)
+    local VW_cur_slotTable = VWLib.GetSpellSlotDetails(VW_entity)
+
+    VWLib.CompareStatus(VW_entity,VW_cur_statusTable,VW_prev_statusTable)
+    VWLib.CompareSpellSlots(VW_entity,VW_cur_slotTable,VW_prev_slotTable)
+
+    
+
+    for _, prev_spellslots in pairs(VW_slotTable) do
+        --CLUtils.SetEntityResourceValue(VW_entity, prev_spellslots, VW_slotTable, prev_spellslots)
+    end
+end
+
+function VW_AS_ABILITIES.VW_EchoesofTime(VW_entity)
+
 end
 
 ---Checks whether the character has shapeshifted into one of the supported wildshape forms and if he has all equipped pieces
@@ -176,25 +191,18 @@ function VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
     end
 end
 
-
-
 Ext.Osiris.RegisterListener("ShapeshiftChanged", 4, "after", function(VW_char, _, _, VW_ss_status)
     VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
 end)
 
 Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(VW_caster, VW_spell, _, _)
-    --print(VW_spell)
-    --print(VW_caster)
     if VW_spell == "VW_Chronoshift" then
-        VW_x,VW_y,VW_z,VW_hp = VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster,VW_x,VW_y,VW_z,VW_hp)
-        --print("X:", VW_x, "Y:", VW_y, "Z:", VW_z)
-        --print("HP:", VW_hp)
+        VW_x, VW_y, VW_z, VW_hp, VW_status = VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
     end
 end)
 
-Ext.Osiris.RegisterListener("CastSpell",5,"before",function(VW_caster,VW_spell,_,_,_)
+Ext.Osiris.RegisterListener("CastSpell", 5, "before", function(VW_caster, VW_spell, _, _, _)
     if Osi.HasActiveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK") and VW_spell == "VW_Chronoshift_Recall" then
-        VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster,VW_x,VW_y,VW_z,VW_hp)
+        VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_status)
     end
 end)
-
