@@ -140,29 +140,24 @@ end
 function VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
     VW_x, VW_y, VW_z = Osi.GetPosition(VW_caster)
     VW_hp = Osi.GetHitpoints(VW_caster)
-    VW_status = {}
-    local VW_entity = VWLib.RetrieveEntity(VW_caster)
-    local VW_prev_statusTable = VWLib.GetStatusDetails(VW_entity)
-    _D(VW_prev_statusTable)
-    local VW_prev_slotTable = VWLib.GetSpellSlotDetails(VW_entity)
-    _D(VW_prev_slotTable)
+    local VW_prev_statusTable = VWLib.GetStatusDetails(VW_caster)
+    local VW_prev_slotTable = VWLib.GetSpellSlotDetails(VW_caster)
     
-    return VW_x, VW_y, VW_z, VW_hp, VW_status, VW_prev_statusTable,VW_prev_slotTable
+    return VW_x, VW_y, VW_z, VW_hp, VW_prev_statusTable,VW_prev_slotTable
 end
 
 function VW_AS_ABILITIES.VW_ChronoshiftCompare(VW_caster, VW_prev_statusTable, VW_prev_slotTable)
-    local VW_entity = VWLib.RetrieveEntity(VW_caster)
-    local VW_cur_statusTable = VWLib.GetStatusDetails(VW_entity)
-    local VW_cur_slotTable = VWLib.GetSpellSlotDetails(VW_entity)
+    local VW_cur_statusTable = VWLib.GetStatusDetails(VW_caster)
+    local VW_cur_slotTable = VWLib.GetSpellSlotDetails(VW_caster)
 
-    VWLib.CompareStatus(VW_entity,VW_cur_statusTable,VW_prev_statusTable)
-    VWLib.CompareSpellSlots(VW_entity,VW_cur_slotTable,VW_prev_slotTable)
+    VWLib.CompareStatuses(VW_caster,VW_cur_statusTable,VW_prev_statusTable)
+    VWLib.CompareSpellSlots(VW_caster,VW_cur_slotTable,VW_prev_slotTable)
 
     
 
-    for _, prev_spellslots in pairs(VW_slotTable) do
+    --for _, prev_spellslots in pairs(VW_prev_slotTable) do
         --CLUtils.SetEntityResourceValue(VW_entity, prev_spellslots, VW_slotTable, prev_spellslots)
-    end
+    --end
 end
 
 function VW_AS_ABILITIES.VW_EchoesofTime(VW_entity)
@@ -197,12 +192,12 @@ end)
 
 Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(VW_caster, VW_spell, _, _)
     if VW_spell == "VW_Chronoshift" then
-        VW_x, VW_y, VW_z, VW_hp, VW_status = VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
+        VW_x, VW_y, VW_z, VW_hp, VW_status, VW_spellslots = VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
     end
 end)
 
 Ext.Osiris.RegisterListener("CastSpell", 5, "before", function(VW_caster, VW_spell, _, _, _)
     if Osi.HasActiveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK") and VW_spell == "VW_Chronoshift_Recall" then
-        VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_status)
+        VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_status, VW_spellslots)
     end
 end)

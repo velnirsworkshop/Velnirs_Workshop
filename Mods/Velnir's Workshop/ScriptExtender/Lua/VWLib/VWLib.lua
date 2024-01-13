@@ -40,9 +40,8 @@ function VWLib.on_reset_completed()
         "VW_W_Aethelion.txt",
         "VW_W_Mpekatsoksulo.txt",
     } do
-      ---@diagnostic disable-next-line: undefined-field
-      Ext.Stats.LoadStatsFile("Public/Velnir's Workshop/Stats/Generated/Data/"..file)
-        
+        ---@diagnostic disable-next-line: undefined-field
+        Ext.Stats.LoadStatsFile("Public/Velnir's Workshop/Stats/Generated/Data/" .. file)
     end
     ---@diagnostic disable-next-line: redundant-parameter
     _P('Reloading stats!')
@@ -57,7 +56,7 @@ function VWLib.LoadLoca(files)
         local contents = Ext.IO.LoadFile(fileName, "data")
 
         for line in string.gmatch(contents, "([^\r\n]+)\r*\n") do
-            local handle, value= string.match(line, '<content contentuid="(%w+)".->(.+)</content>')
+            local handle, value = string.match(line, '<content contentuid="(%w+)".->(.+)</content>')
             if handle ~= nil and value ~= nil then
                 value = value:gsub("&[lg]t;", {
                     ['&lt;'] = "<",
@@ -77,68 +76,91 @@ end
 function VWLib.RetrieveEntity(entity)
     CLUtils.Info("RetrieveEntity FilterEntityResources")
     local res
-  
+
     if type(entity) == "string" then
-      res = Ext.Entity.Get(entity)
+        res = Ext.Entity.Get(entity)
     else
-      res = entity
+        res = entity
     end
-  
+
     return res
-  end
+end
 
-
- function VWLib.GetStatusDetails(entity)
+function VWLib.GetStatusDetails(VW_caster)
     CLUtils.Info("RetrieveStatus")
-    local entityToCall = VWLib.RetrieveEntity(entity)
-    VW_Globals.StatusDetails = {}
-
-    for _, statusDetails in ipairs(entityToCall.ServerCharacter.Character.StatusManager.Statuses) do
-        local statusEntry = {
-            StatusId = statusDetails.StatusId,
+    local statusDetailsList = {}
+    local VW_entity = VWLib.RetrieveEntity(VW_caster)
+    for _, statusDetails in ipairs(VW_entity.ServerCharacter.StatusManager.Statuses) do
+        local details = {
+            StatusId = tostring(statusDetails.StatusId),
             Lifetime = statusDetails.LifeTime,
             CurrentLifeTime = statusDetails.CurrentLifeTime,
             Owner = statusDetails.Owner,
             StackId = statusDetails.StackId,
             ForceStatus = statusDetails.ForceStatus
         }
-
-        VW_Globals.StatusDetails[statusDetails.StatusId] = statusEntry
+        CLUtils.AddToTable(statusDetailsList, details)
     end
 
-    return VW_Globals.StatusDetails
+    return statusDetailsList
 end
 
-function VWLib.CompareStatus(entity,cur_status,prev_status)
-    -- Remove statuses that are in VW_entity.StatusContainer.Statuses but not in VW_status
-    for _, cur_status in pairs(cur_status) do
-        if not CLUtils.IsInTable(prev_status, cur_status) then
-            print("Removing Status:", cur_status)
-            Osi.RemoveStatus(entity, cur_status)
+function VWLib.CompareStatuses(VW_caster, cur_status, prev_status)
+    _D(cur_status)
+    _D(prev_status)
+    for _, currentStatus in ipairs(cur_status) do
+        local found = false
+        for _, previousStatus in ipairs(prev_status) do
+            if currentStatus.StatusId == previousStatus.StatusId then
+                -- Found Matching Statuses
+                found = true
+                break
+            end
+        end
+        if not found then
+            -- Status should not exist based on our previous statuses.
+            Osi.RemoveStatus(VW_caster, currentStatus.StatusId)
         end
     end
-    -- Apply statuses that are in VW_status but not in VW_entity.StatusContainer.Statuses
-    for _, desired_status in pairs(prev_status) do
-        if not CLUtils.IsInTable(cur_status, desired_status) then
-            print("Applying Status:", desired_status)
-            Osi.ApplyStatus(entity, desired_status, 100, 1,owner)
+
+    -- Check for statuses to apply
+    for _, previousStatus in ipairs(prev_status) do
+        local found = false
+        for _, currentStatus in ipairs(cur_status) do
+            if previousStatus.StatusId == currentStatus.StatusId then
+                -- Found Matching Statuses
+                found = true
+                break
+            end
+        end
+        if not found then
+            local resultForce
+            if previousStatus.ForceStatus then --Make sure ForceStatus which is a bool is translated properly to number for Osi.ApplyStatus
+                resultForce = 1
+            else
+                resultForce = 0
+            end
+            -- Status is Missing from current statuses. We must apply based on what state this status was when we casted Chronoshift.
+            Osi.ApplyStatus(VW_caster, previousStatus.StatusId, previousStatus.CurrentLifeTime, resultForce)
         end
     end
 end
 
-function VWLib.GetSpellSlotDetails(entity)
+function VWLib.GetSpellSlotDetails(VW_caster)
     CLUtils.Info("RetrieveSpellSlotDetails")
-    local entityToCall = VWLib.RetrieveEntity(entity)
+    local entityToCall = VWLib.RetrieveEntity(VW_caster)
     VW_Globals.ValidSlots = CLUtils.LoadSpellSlotsGroupToArray(VW_Globals.ValidSlots)
     VW_slotTable = CLUtils.FilterEntityResources(VW_Globals.ValidSlots, entityToCall.ActionResources.Resources)
-
     return VW_slotTable
 end
 
-function VWLib.CompareSpellSlots(entity,cur_spellslots,prev_spellslots)
-
+function VWLib.CompareSpellSlots(VW_caster, cur_spellslots, prev_spellslots)
+    _D(cur_spellslots)
+    _D(prev_spellslots)
+    local entityToCall = VWLib.RetrieveEntity(VW_caster)
+    for _, currentSS in ipairs(cur_spellslots) do
+        for _, previousSS in ipairs(prev_spellslots) do
+            
+        end
+    end
 end
-
-
-
-
