@@ -20,7 +20,7 @@ function VWLib.GetTeamMembers(event)
     local VW_TeamMembers = {}
     for _, v in pairs(VW_TeamDB) do
         local uuid = v[1]
-        print("Team Member: " .. uuid)
+        --print("Team Member: " .. uuid)
         VW_TeamMembers[uuid] = true
         VW_AS.VW_SetCheck(uuid)
         VW_AS.VW_SetBonus(uuid)
@@ -106,8 +106,6 @@ function VWLib.GetStatusDetails(VW_caster)
 end
 
 function VWLib.CompareStatuses(VW_caster, cur_status, prev_status)
-    _D(cur_status)
-    _D(prev_status)
     for _, currentStatus in ipairs(cur_status) do
         local found = false
         for _, previousStatus in ipairs(prev_status) do
@@ -149,18 +147,61 @@ end
 function VWLib.GetSpellSlotDetails(VW_caster)
     CLUtils.Info("RetrieveSpellSlotDetails")
     local entityToCall = VWLib.RetrieveEntity(VW_caster)
-    VW_Globals.ValidSlots = CLUtils.LoadSpellSlotsGroupToArray(VW_Globals.ValidSlots)
-    VW_slotTable = CLUtils.FilterEntityResources(VW_Globals.ValidSlots, entityToCall.ActionResources.Resources)
+    local VW_ValidSlots = CLUtils.LoadSpellSlotsGroupToArray(VW_Globals.ValidSlots)
+    VW_slotTable = CLUtils.FilterEntityResources(VW_ValidSlots, entityToCall.ActionResources.Resources)
     return VW_slotTable
 end
 
 function VWLib.CompareSpellSlots(VW_caster, cur_spellslots, prev_spellslots)
-    _D(cur_spellslots)
-    _D(prev_spellslots)
     local entityToCall = VWLib.RetrieveEntity(VW_caster)
-    for _, currentSS in ipairs(cur_spellslots) do
-        for _, previousSS in ipairs(prev_spellslots) do
-            
+    for _, previousSS in pairs(prev_spellslots) do
+        for _, currentSS in pairs(cur_spellslots) do
+            if currentSS.Level == 1 and currentSS.Amount < previousSS.Amount then
+                CLUtils.SetEntityResourceValue(
+                    entityToCall,
+                    currentSS.UUID,
+                    { Amount = previousSS.Amount },
+                    currentSS.Level
+                )
+                print(currentSS.Amount)
+                print(previousSS.Amount)
+                print("Got level 1")
+                currentSS.Amount = previousSS.Amount
+                print(currentSS.Amount)
+            elseif currentSS.Level == 2 and currentSS.Amount < previousSS.Amount then
+                CLUtils.SetEntityResourceValue(
+                    entityToCall,
+                    currentSS.UUID,
+                    { Amount = previousSS.Amount },
+                    currentSS.Level
+                )
+                print(currentSS.Amount)
+                print(previousSS.Amount)
+                print("Got level 2")
+                currentSS.Amount = previousSS.Amount
+                print(currentSS.Amount)
+            elseif currentSS.Level == 3 and currentSS.Amount < previousSS.Amount then
+                CLUtils.SetEntityResourceValue(
+                    entityToCall,
+                    currentSS.UUID,
+                    { Amount = previousSS.Amount },
+                    currentSS.Level
+                )
+                print(currentSS.Amount)
+                print(previousSS.Amount)
+                print("Got level 3")
+                currentSS.Amount = previousSS.Amount
+                print(currentSS.Amount)
+            else
+                break
+            end
+            print("repeat")
         end
     end
+end
+
+
+function VWLib.ChanceRoll()
+    local result = CLUtils.RollDice(1,100)
+    return result
 end

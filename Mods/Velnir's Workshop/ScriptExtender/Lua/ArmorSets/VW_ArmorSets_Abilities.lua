@@ -130,38 +130,77 @@ local VW_TSS_Status = {
     },
 }
 
-function VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_prev_statusTable,VW_prev_slotTable)
+---We teleport to the X,Y,Z and the Hitpoint Percentagewe got from VW_ChronoshiftCheck(). In addition we are call a compare to check the current statuses and spellslots versus the previous from VW_ChronoshiftCheck().
+---@param VW_caster any
+---@param VW_x any
+---@param VW_y any
+---@param VW_z any
+---@param VW_hp any
+---@param VW_prev_statusTable any
+---@param VW_prev_slotTable any
+function VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_prev_statusTable, VW_prev_slotTable)
+    print("trigger chronoshift recall")
     Osi.TeleportToPosition(VW_caster, VW_x, VW_y, VW_z)
     Osi.SetHitpointsPercentage(VW_caster, VW_hp)
     VW_AS_ABILITIES.VW_ChronoshiftCompare(VW_caster, VW_prev_statusTable, VW_prev_slotTable)
 end
 
-
+---We store the current X,Y,Z and Hitpoint percentage of the caster of Chronoshift while also storing his statuses and current spellslots.
+---@param VW_caster string|number
+---@return number|string|nil
+---@return number
+---@return number
+---@return string|number|nil
+---@return table
+---@return table
 function VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
+    print("trigger chronoshift check")
     VW_x, VW_y, VW_z = Osi.GetPosition(VW_caster)
     VW_hp = Osi.GetHitpoints(VW_caster)
     local VW_prev_statusTable = VWLib.GetStatusDetails(VW_caster)
     local VW_prev_slotTable = VWLib.GetSpellSlotDetails(VW_caster)
-    
-    return VW_x, VW_y, VW_z, VW_hp, VW_prev_statusTable,VW_prev_slotTable
+    _D(VW_prev_slotTable)
+
+    return VW_x, VW_y, VW_z, VW_hp, VW_prev_statusTable, VW_prev_slotTable
 end
 
+---We are comparing the previous statuses and spellslots with the currect statuses and spellslots and then we revert back to our previous state based on the statuses and spellslots from VW_ChronoshiftCheck()
+---@param VW_caster any
+---@param VW_prev_statusTable any
+---@param VW_prev_slotTable any
 function VW_AS_ABILITIES.VW_ChronoshiftCompare(VW_caster, VW_prev_statusTable, VW_prev_slotTable)
+    print("trigger chronoshift compare")
     local VW_cur_statusTable = VWLib.GetStatusDetails(VW_caster)
     local VW_cur_slotTable = VWLib.GetSpellSlotDetails(VW_caster)
 
-    VWLib.CompareStatuses(VW_caster,VW_cur_statusTable,VW_prev_statusTable)
-    VWLib.CompareSpellSlots(VW_caster,VW_cur_slotTable,VW_prev_slotTable)
-
-    
-
-    --for _, prev_spellslots in pairs(VW_prev_slotTable) do
-        --CLUtils.SetEntityResourceValue(VW_entity, prev_spellslots, VW_slotTable, prev_spellslots)
-    --end
+    VWLib.CompareStatuses(VW_caster, VW_cur_statusTable, VW_prev_statusTable)
+    _D(VW_cur_slotTable)
+    VWLib.CompareSpellSlots(VW_caster, VW_cur_slotTable, VW_prev_slotTable)
 end
 
-function VW_AS_ABILITIES.VW_EchoesofTime(VW_entity)
-
+function VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell, VW_spellType)
+    local result = VWLib.ChanceRoll()
+    print(result)
+    if result <= 30 then
+        if VW_spellType == "projectile" then
+            print("projectile replication")
+            if VW_target ~= nil then
+                Osi.UseSpell(VW_caster, VW_spell, VW_target)
+            else
+                Osi.UseSpellAtPosition(VW_caster,VW_spell,VW_target_pos_x,VW_target_pos_y,VW_target_pos_z)
+            end
+            Ext.Entity.Unsubscribe(VW_sub)
+            
+        elseif VW_spellType == "target" then
+            print("target replication")
+            if VW_target ~= nil then
+                Osi.UseSpell(VW_caster, VW_spell, VW_target)
+            else
+                Osi.UseSpellAtPosition(VW_caster,VW_spell,VW_target_pos_x,VW_target_pos_y,VW_target_pos_z)
+            end
+            Ext.Entity.Unsubscribe(VW_sub)
+        end
+    end
 end
 
 ---Checks whether the character has shapeshifted into one of the supported wildshape forms and if he has all equipped pieces
@@ -192,12 +231,36 @@ end)
 
 Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(VW_caster, VW_spell, _, _)
     if VW_spell == "VW_Chronoshift" then
+        print("listen chronoshift")
         VW_x, VW_y, VW_z, VW_hp, VW_status, VW_spellslots = VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
     end
 end)
 
-Ext.Osiris.RegisterListener("CastSpell", 5, "before", function(VW_caster, VW_spell, _, _, _)
+Ext.Osiris.RegisterListener("CastSpell", 5, "after", function(VW_caster, VW_spell, VW_spellType, _, _)
+    ---@diagnostic disable-next-line: redundant-parameter
+    VW_sub = Ext.Entity.Subscribe("SpellCastAnimationInfo", function(entity)
+        VW_target_entity = entity.SpellCastAnimationInfo.Target
+        VW_target = Ext.Entity.HandleToUuid(VW_target_entity)
+        VW_target_pos = entity.SpellCastAnimationInfo.TargetPosition
+        VW_target_pos_x = VW_target_pos[1]
+        VW_target_pos_y = VW_target_pos[2]
+        VW_target_pos_z = VW_target_pos[3]
+    end)
     if Osi.HasActiveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK") and VW_spell == "VW_Chronoshift_Recall" then
+        print("listen chronoshift recall")
+        Osi.RemoveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK")
         VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_status, VW_spellslots)
     end
+    if Osi.HasPassive(VW_caster, "VW_Echoes_Of_Time") == 1 then
+        print("listen echoes of time")
+        _D(VW_spellType)
+        _D(VW_caster)
+        VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell, VW_spellType)
+    end
 end)
+
+--Ext.Osiris.RegisterListener("UsingSpellOnTarget",6,"after",function(caster, target, spell, _, _, _)
+--print("listening")
+--print("caster",caster)
+--print("target",target)
+--end)
