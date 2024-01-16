@@ -146,8 +146,9 @@ end
 
 function VWLib.GetSpellSlotDetails(VW_caster)
     CLUtils.Info("RetrieveSpellSlotDetails")
+    local VW_ValidSlots = {}
     local entityToCall = VWLib.RetrieveEntity(VW_caster)
-    local VW_ValidSlots = CLUtils.LoadSpellSlotsGroupToArray(VW_Globals.ValidSlots)
+    VW_ValidSlots = CLUtils.LoadSpellSlotsGroupToArray(VW_ValidSlots)
     VW_slotTable = CLUtils.FilterEntityResources(VW_ValidSlots, entityToCall.ActionResources.Resources)
     return VW_slotTable
 end
@@ -156,46 +157,14 @@ function VWLib.CompareSpellSlots(VW_caster, cur_spellslots, prev_spellslots)
     local entityToCall = VWLib.RetrieveEntity(VW_caster)
     for _, previousSS in pairs(prev_spellslots) do
         for _, currentSS in pairs(cur_spellslots) do
-            if currentSS.Level == 1 and currentSS.Amount < previousSS.Amount then
+            if currentSS.Level == previousSS.Level and currentSS.Level <= 3 and currentSS.Amount < previousSS.Amount then
                 CLUtils.SetEntityResourceValue(
                     entityToCall,
                     currentSS.UUID,
                     { Amount = previousSS.Amount },
                     currentSS.Level
                 )
-                print(currentSS.Amount)
-                print(previousSS.Amount)
-                print("Got level 1")
-                currentSS.Amount = previousSS.Amount
-                print(currentSS.Amount)
-            elseif currentSS.Level == 2 and currentSS.Amount < previousSS.Amount then
-                CLUtils.SetEntityResourceValue(
-                    entityToCall,
-                    currentSS.UUID,
-                    { Amount = previousSS.Amount },
-                    currentSS.Level
-                )
-                print(currentSS.Amount)
-                print(previousSS.Amount)
-                print("Got level 2")
-                currentSS.Amount = previousSS.Amount
-                print(currentSS.Amount)
-            elseif currentSS.Level == 3 and currentSS.Amount < previousSS.Amount then
-                CLUtils.SetEntityResourceValue(
-                    entityToCall,
-                    currentSS.UUID,
-                    { Amount = previousSS.Amount },
-                    currentSS.Level
-                )
-                print(currentSS.Amount)
-                print(previousSS.Amount)
-                print("Got level 3")
-                currentSS.Amount = previousSS.Amount
-                print(currentSS.Amount)
-            else
-                break
             end
-            print("repeat")
         end
     end
 end

@@ -4,7 +4,24 @@
 	<region id="Templates">
 		<node id="Templates">
 			<children>
-
+				<!-- invisible helper -->
+				<node id="GameObjects">
+					<attribute id="CanClickThrough" type="bool" value="True" />
+					<attribute id="CanShootThrough" type="bool" value="True" />
+					<attribute id="CastShadow" type="bool" value="False" />
+					<attribute id="DisplayName" type="TranslatedString" handle="" version="0" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="99e8c207-7d1c-4ee5-89e5-bb45754fcfc3" />
+					<attribute id="Name" type="LSString" value="VW_Helper_Invisible_Summon" />
+					<attribute id="ParentTemplateId" type="FixedString" value="06f96d65-0ee5-4ed5-a30a-92a3bfe3f708" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="04178fff-4061-d559-da24-e8a5152c2321" />
+					<attribute id="Stats" type="FixedString" value="VW_generic_immutable_helper" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="VisualTemplate" type="FixedString" value="fd5aa94f-66ec-14ec-fa97-b88fae69796b" />
+					<attribute id="WalkOn" type="bool" value="False" />
+					<attribute id="WalkThrough" type="bool" value="True" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115200960758169" />
+				</node>
 
 				<!-- Grovekeeper's Jacket-->
 				<node id="GameObjects">

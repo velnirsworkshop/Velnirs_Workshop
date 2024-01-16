@@ -178,30 +178,19 @@ function VW_AS_ABILITIES.VW_ChronoshiftCompare(VW_caster, VW_prev_statusTable, V
     VWLib.CompareSpellSlots(VW_caster, VW_cur_slotTable, VW_prev_slotTable)
 end
 
-function VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell, VW_spellType)
+
+
+function VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell)
     local result = VWLib.ChanceRoll()
     print(result)
-    if result <= 30 then
-        if VW_spellType == "projectile" then
-            print("projectile replication")
-            if VW_target ~= nil then
-                Osi.UseSpell(VW_caster, VW_spell, VW_target)
-            else
-                Osi.UseSpellAtPosition(VW_caster,VW_spell,VW_target_pos_x,VW_target_pos_y,VW_target_pos_z)
-            end
-            Ext.Entity.Unsubscribe(VW_sub)
-            
-        elseif VW_spellType == "target" then
-            print("target replication")
-            if VW_target ~= nil then
-                Osi.UseSpell(VW_caster, VW_spell, VW_target)
-            else
-                Osi.UseSpellAtPosition(VW_caster,VW_spell,VW_target_pos_x,VW_target_pos_y,VW_target_pos_z)
-            end
-            Ext.Entity.Unsubscribe(VW_sub)
-        end
+    if result <= 20 then
+            print("replication")
+            Osi.UnlockSpellVariant(VW_spell,Osi.ModifyIconGlow())
+            _D(_C().SpellModificationContainer.Modifications)
     end
 end
+
+
 
 ---Checks whether the character has shapeshifted into one of the supported wildshape forms and if he has all equipped pieces
 ---of the Grovekeeper set then it allows the transformed character to keep his Equipment bonuses
@@ -225,6 +214,12 @@ function VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
     end
 end
 
+
+--#region Listeners
+
+
+
+
 Ext.Osiris.RegisterListener("ShapeshiftChanged", 4, "after", function(VW_char, _, _, VW_ss_status)
     VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
 end)
@@ -236,31 +231,53 @@ Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(VW_ca
     end
 end)
 
-Ext.Osiris.RegisterListener("CastSpell", 5, "after", function(VW_caster, VW_spell, VW_spellType, _, _)
-    ---@diagnostic disable-next-line: redundant-parameter
-    VW_sub = Ext.Entity.Subscribe("SpellCastAnimationInfo", function(entity)
-        VW_target_entity = entity.SpellCastAnimationInfo.Target
-        VW_target = Ext.Entity.HandleToUuid(VW_target_entity)
-        VW_target_pos = entity.SpellCastAnimationInfo.TargetPosition
-        VW_target_pos_x = VW_target_pos[1]
-        VW_target_pos_y = VW_target_pos[2]
-        VW_target_pos_z = VW_target_pos[3]
-    end)
+Ext.Osiris.RegisterListener("CastSpell", 5, "after", function(VW_caster, VW_spell, _, _, _)
+    if VW_spell == "VW_Chronoshift" then
+        VW_Chrono_VFX = Osi.PlayLoopEffectAtPosition("ce4adb6a-3b34-ec33-b464-fd90f9ffee57", VW_x, VW_y, VW_z, 1)
+    end
+
     if Osi.HasActiveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK") and VW_spell == "VW_Chronoshift_Recall" then
         print("listen chronoshift recall")
         Osi.RemoveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK")
+        if VW_Chrono_VFX then
+            Osi.StopLoopEffect(VW_Chrono_VFX)
+        end
         VW_AS_ABILITIES.VW_ChronoshiftRecall(VW_caster, VW_x, VW_y, VW_z, VW_hp, VW_status, VW_spellslots)
     end
+    
     if Osi.HasPassive(VW_caster, "VW_Echoes_Of_Time") == 1 then
         print("listen echoes of time")
-        _D(VW_spellType)
         _D(VW_caster)
-        VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell, VW_spellType)
+        VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell)
     end
+    
 end)
 
---Ext.Osiris.RegisterListener("UsingSpellOnTarget",6,"after",function(caster, target, spell, _, _, _)
---print("listening")
---print("caster",caster)
---print("target",target)
---end)
+Ext.Osiris.RegisterListener("StatusRemoved",4,"after",function(VW_entity, VW_status, _, _)
+    if VW_status == "VW_CHRONOSHIFT_RECALL_CHECK" and VW_Chrono_VFX then
+        Osi.StopLoopEffect(VW_Chrono_VFX)
+    end
+
+end)
+
+
+
+--#endregion
+
+---@diagnostic disable-next-line: redundant-parameter
+Ext.Entity.Subscribe("SpellCastAnimationInfo", function(entity)
+    VW_target_entity = entity.SpellCastAnimationInfo.Target
+    if VW_target_entity ~= nil then
+        VW_target = Ext.Entity.HandleToUuid(VW_target_entity)
+    else
+        VW_target = nil
+    end
+    print(VW_target)
+    VW_target_pos = entity.SpellCastAnimationInfo.TargetPosition
+    VW_target_pos_x = VW_target_pos[1]
+    VW_target_pos_y = VW_target_pos[2]
+    VW_target_pos_z = VW_target_pos[3]
+    _D(VW_target_pos_x)
+    _D(VW_target_pos_y)
+    _D(VW_target_pos_z)
+end)
