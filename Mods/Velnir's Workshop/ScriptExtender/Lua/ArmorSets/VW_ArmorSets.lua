@@ -59,6 +59,7 @@ VW_AS.VW_ArmorSets = {
 
 }
 
+
 --- Checks for the Character that equipped or unequipped an item how many item of the corresponding set are equipped
 --- @param VW_character string|number
 function VW_AS.VW_SetCheck(VW_character)

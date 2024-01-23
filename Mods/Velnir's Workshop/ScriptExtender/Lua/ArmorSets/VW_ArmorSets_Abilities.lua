@@ -182,11 +182,13 @@ end
 
 function VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell)
     local result = VWLib.ChanceRoll()
+    local entityToCall = VWLib.RetrieveEntity(VW_caster)
     print(result)
-    if result <= 20 then
-            print("replication")
-            Osi.UnlockSpellVariant(VW_spell,Osi.ModifyIconGlow())
-            _D(_C().SpellModificationContainer.Modifications)
+    if result <= 100 then
+            
+            --print("replication")
+            --_D(entityToCall.SpellModificationContainer.Modifications.VW_spell)
+            --_D(_C().SpellModificationContainer.Modifications)
     end
 end
 
@@ -219,14 +221,13 @@ end
 
 
 
-
 Ext.Osiris.RegisterListener("ShapeshiftChanged", 4, "after", function(VW_char, _, _, VW_ss_status)
     VW_AS_ABILITIES.VW_AvatarCheck(VW_char, _, _, VW_ss_status)
 end)
 
 Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(VW_caster, VW_spell, _, _)
     if VW_spell == "VW_Chronoshift" then
-        print("listen chronoshift")
+        --print("listen chronoshift")
         VW_x, VW_y, VW_z, VW_hp, VW_status, VW_spellslots = VW_AS_ABILITIES.VW_ChronoshiftCheck(VW_caster)
     end
 end)
@@ -237,7 +238,7 @@ Ext.Osiris.RegisterListener("CastSpell", 5, "after", function(VW_caster, VW_spel
     end
 
     if Osi.HasActiveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK") and VW_spell == "VW_Chronoshift_Recall" then
-        print("listen chronoshift recall")
+        --print("listen chronoshift recall")
         Osi.RemoveStatus(VW_caster, "VW_CHRONOSHIFT_RECALL_CHECK")
         if VW_Chrono_VFX then
             Osi.StopLoopEffect(VW_Chrono_VFX)
@@ -246,7 +247,7 @@ Ext.Osiris.RegisterListener("CastSpell", 5, "after", function(VW_caster, VW_spel
     end
     
     if Osi.HasPassive(VW_caster, "VW_Echoes_Of_Time") == 1 then
-        print("listen echoes of time")
+        --print("listen echoes of time")
         _D(VW_caster)
         VW_AS_ABILITIES.VW_EchoesofTime(VW_caster, VW_spell)
     end
